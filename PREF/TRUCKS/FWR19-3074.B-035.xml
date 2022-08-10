@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Preferences sdk="4.11.1">
+  <category name="general">
+    <pref name="modelFileName">RMatic_1.5</pref>
+  </category>
+  <category name="battery">
+    <pref name="hardware">CAN</pref>
+  </category>
+  <category name="odometrie">
+<!--    <pref name="kdsa">-26970</pref>-->
+      <pref name="alpha0">65525</pref>
+  </category>
+  <category name="navigationLaser">
+<!--    <pref name="laserRobPos">cpx(1.485, 0)</pref>-->
+    <pref name="laserRobCap">1</pref>
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="rearLeftLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="rearRightLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="curtainLaser">
+    <pref name="phi">Auto</pref>
+    <pref name="cap">Auto</pref>
+    <pref name="height">Auto</pref>
+  </category>
+  <category name="traction_speed_control">
+    <pref name="offset_to_positive">0</pref>
+    <pref name="offset_to_negative">0.0</pref>
+    <pref name="zero_value">Auto</pref>
+    <category name="feedforward">
+      <pref name="forksLevels">Auto</pref>
+      <pref name="forksLow">Auto</pref>
+      <pref name="forksIntermediate">Auto</pref>
+      <pref name="forksHigh">Auto</pref>
+      <pref name="forksNotCalibrated">Auto</pref>
+    </category>
+  </category>
+  <category name="turret_position_control">
+    <pref name="offset_to_positive">0.0</pref>
+    <pref name="offset_to_negative">-0.0</pref>
+    <pref name="zero_value">0</pref>
+    <pref name="steeringFunction">Auto</pref>
+    <category name="feedforward">
+      <pref name="setpoint2control">
+        <value>cpx(-60,  -0.5)</value>
+        <value>cpx( 60,   0.5)</value>
+      </pref>
+    </category>
+  </category>
+  <category name="sensors">
+    <category name="encoderVerticalForks">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0.0</pref>
+      <pref name="physicalMeasureHighStop">6.98</pref>
+      <pref name="sensorValueLowStop">0</pref>
+      <pref name="sensorValueHighStop">6980</pref>
+    </category>
+    <category name="encoderSideShifterForks">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">Auto</pref>
+      <pref name="physicalMeasureHighStop">Auto</pref>
+      <pref name="sensorValueLowStop">Auto</pref>
+      <pref name="sensorValueHighStop">Auto</pref>
+    </category>
+    <category name="encoderSlipSheetForks">
+      <pref name="filteringRatio">0.1</pref>
+      <pref name="physicalMeasureLowStop">Auto</pref>
+      <pref name="physicalMeasureHighStop">Auto</pref>
+      <pref name="sensorValueLowStop">Auto</pref>
+      <pref name="sensorValueHighStop">Auto</pref>
+    </category>
+    <category name="encoderPalletTelemeter">
+      <pref name="filteringRatio">0.3</pref>
+      <pref name="physicalMeasureLowStop">Auto</pref>
+      <pref name="physicalMeasureHighStop">Auto</pref>
+      <pref name="sensorValueLowStop">Auto</pref>
+      <pref name="sensorValueHighStop">Auto</pref>
+    </category>
+    <category name="encoderRSideTelemeter">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0</pref>
+      <pref name="physicalMeasureHighStop">1</pref>
+      <pref name="sensorValueLowStop">0</pref>
+      <pref name="sensorValueHighStop">1</pref>
+    </category>
+    <category name="encoderLSideTelemeter">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0</pref>
+      <pref name="physicalMeasureHighStop">1</pref>
+      <pref name="sensorValueLowStop">0</pref>
+      <pref name="sensorValueHighStop">1</pref>
+    </category>
+    <category name="loadWeightSensor">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0.0</pref>
+      <pref name="physicalMeasureHighStop">1600.0</pref>
+      <pref name="sensorValueLowStop">950</pref>
+      <pref name="sensorValueHighStop">2550</pref>
+    </category>
+    <category name="tiltForksSensor">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0</pref>
+      <pref name="physicalMeasureHighStop">2.6</pref>
+      <pref name="sensorValueLowStop">20</pref>
+      <pref name="sensorValueHighStop">49</pref>
+    </category>
+  </category>
+  <category name="detection">
+    <category name="camera3D">
+      <category name="forksCamera">
+        <pref name="xRotation">180.0</pref>
+        <pref name="yRotation">-0.8</pref>
+        <pref name="zRotation">0.9</pref>
+        <pref name="xTranslation">-0.08</pref>
+        <pref name="yTranslation">0.07</pref>
+        <pref name="zTranslation">-0.285</pref>
+        <pref name="enableCloudDump">0</pref>
+      </category>
+      <category name="mastCamera">
+        <pref name="xRotation">179.0</pref>
+        <pref name="yRotation">-0.5</pref>
+        <pref name="zRotation">0.2</pref>
+        <pref name="xTranslation">-0.05</pref>
+        <pref name="yTranslation">0.078</pref>
+        <pref name="zTranslation">1.74</pref>
+      </category>
+    </category>
+  </category>
+  <category name="brakes">
+    <pref name="max_output">Auto</pref>
+    <pref name="zero_value">Auto</pref>
+  </category>
+</Preferences>

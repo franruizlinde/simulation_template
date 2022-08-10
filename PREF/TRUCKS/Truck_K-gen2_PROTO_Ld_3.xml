@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Preferences sdk="4.11.1">
+  <category name="general">
+    <pref name="modelFileName">LINDE_K-gen2</pref>
+  </category>
+  <category name="odometrie">
+    <pref name="alpha0">-1</pref>
+  </category>
+  <category name="traction_speed_control">
+    <pref name="zero_value">0</pref>
+  </category>
+  <category name="turret_position_control">
+    <pref name="zero_value">0</pref>
+  </category>
+  <category name="battery">
+    <pref name="hardware">CAN</pref>
+  </category>
+  <category name="navigationLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="navigationLaser2">
+    <pref name="laserRobCap">0.0</pref>
+  </category>
+  <category name="frontLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="rearLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+    <pref name="phi">Auto</pref>
+  </category>
+  <category name="rearLeftLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+    <pref name="phi">Auto</pref>
+  </category>
+  <category name="rearRightLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+    <pref name="phi">Auto</pref>
+  </category>
+  <category name="curtainLaser">
+    <pref name="phi">Auto</pref>
+    <pref name="cap">Auto</pref>
+    <pref name="height">Auto</pref>
+  </category>
+  <category name="sensors">
+    <category name="encoderVerticalForks">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0.062</pref>
+      <pref name="physicalMeasureHighStop">6.5</pref>
+      <pref name="sensorValueLowStop">60</pref>
+      <pref name="sensorValueHighStop">6500</pref>
+      <category name="auxiliarySensor">
+        <pref name="filteringRatio">1</pref>
+        <pref name="physicalMeasureLowStop">0</pref>
+        <pref name="physicalMeasureHighStop">1.785</pref>
+        <pref name="sensorValueLowStop">2</pref>
+        <pref name="sensorValueHighStop">1791</pref>
+      </category>
+    </category>
+    <category name="encoderAuxiliaryMastForks">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0</pref>
+      <pref name="physicalMeasureHighStop">1.785</pref>
+      <pref name="sensorValueLowStop">2</pref>
+      <pref name="sensorValueHighStop">1791</pref>
+    </category>
+    <category name="encoderCabin">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0.062</pref>
+      <pref name="physicalMeasureHighStop">4.710</pref>
+      <pref name="sensorValueLowStop">60</pref>
+      <pref name="sensorValueHighStop">4710</pref>
+    </category>
+    <category name="encoderRetractForks">
+      <pref name="filteringRatio">1</pref>
+      <pref name="retractLeftRange">1.519</pref>
+      <pref name="sensorValueRightStopOut">1</pref>
+      <pref name="sensorValueLeftStopIn">0</pref>
+      <pref name="sensorValueRightStopIn">1384</pref>
+      <pref name="sensorValueLeftStopOut">1382</pref>
+    </category>
+    <category name="encoderPalletRangefinder">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0</pref>
+      <pref name="physicalMeasureHighStop">1.84</pref>
+      <pref name="sensorValueLowStop">8</pref>
+      <pref name="sensorValueHighStop">862</pref>
+    </category>
+    <category name="loadWeightSensor">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0.0</pref>
+      <pref name="physicalMeasureHighStop">1300.0</pref>
+      <pref name="sensorValueLowStop">0</pref>
+      <pref name="sensorValueHighStop">130</pref>
+    </category>
+  </category>
+  <category name="detection">
+    <category name="camera3D">
+      <category name="forksCamera">
+        <pref name="xRotation">-180</pref>
+        <pref name="yRotation">1</pref>
+        <pref name="zRotation">-0.7</pref>
+        <pref name="xTranslation">-0.066</pref>
+        <pref name="yTranslation">-0.059</pref>
+        <pref name="zTranslation">-0.255</pref>
+        <!-- <pref name="offsetDetection_front">0.03</pref> -->
+      </category>
+      <category name="mastCamera">
+        <pref name="xRotation">0</pref>
+        <pref name="yRotation">0</pref>
+        <pref name="zRotation">0</pref>
+        <pref name="xTranslation">-0.22</pref>
+        <pref name="yTranslation">0</pref>
+        <pref name="zTranslation">2.58</pref>
+      </category>
+    </category>
+  </category>
+  <category name="perception">
+    <pref name="forksType">mySTLForksFile</pref>
+  </category>
+  <category name="safety">
+    <pref name="forksLowInductiveHeight">0.02</pref>
+    <pref name="cabinLowInductiveHeight">0.45</pref>
+  </category>
+</Preferences>

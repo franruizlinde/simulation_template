@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Preferences sdk="4.11.1">
+  <category name="general">
+    <pref name="modelFileName">RGen2_5PZS_EXHL</pref>
+  </category>
+  <category name="odometrie">
+    <pref name="alpha0">65528</pref>
+  </category>
+  <category name="traction_speed_control">
+    <pref name="zero_value">2500</pref>
+  </category>
+  <category name="turret_position_control">
+    <pref name="zero_value">0</pref>
+    <pref name="steeringFunction">auto</pref>
+    <pref name="minimalValue">auto</pref>
+    <pref name="maximalValue">auto</pref>
+    <pref name="minimalSum">auto</pref>
+    <pref name="maximalSum">auto</pref>
+  </category>
+  <category name="battery">
+      <pref name="hardware">CAN</pref>
+  </category>
+  <category name="navigationLaser">
+    <pref name="laserRobCap">0</pref>
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="frontLeftLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="frontRightLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="rearLeftLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="rearRightLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="curtainLaser">
+    <pref name="phi">Auto</pref>
+    <pref name="cap">Auto</pref>
+    <pref name="height">Auto</pref>
+  </category>
+  <category name="safety">
+    <pref name="forksLowInductiveHeight">0.420</pref>
+    <pref name="forksHighInductiveHeight">0.440</pref>
+  </category>
+  <category name="sensors">
+    <category name="encoderVerticalForks">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0</pref>
+      <pref name="physicalMeasureHighStop">15</pref>
+      <pref name="sensorValueLowStop">0</pref>
+      <pref name="sensorValueHighStop">15000</pref>
+    </category>
+    <category name="encoderCANVerticalForks">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0</pref>
+      <pref name="physicalMeasureHighStop">15</pref>
+      <pref name="sensorValueLowStop">0</pref>
+      <pref name="sensorValueHighStop">15000</pref>
+    </category>
+    <category name="encoderForksRangefinder">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0.065</pref>
+      <pref name="physicalMeasureHighStop">1.5</pref>
+      <pref name="sensorValueLowStop">1748</pref>
+      <pref name="sensorValueHighStop">8948</pref>
+    </category>
+    <category name="encoderSideShifterForks">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">Auto</pref>
+      <pref name="physicalMeasureHighStop">Auto</pref>
+      <pref name="sensorValueLowStop">Auto</pref>
+      <pref name="sensorValueHighStop">Auto</pref>
+    </category>
+    <category name="encoderSlipSheetForks">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">Auto</pref>
+      <pref name="physicalMeasureHighStop">Auto</pref>
+      <pref name="sensorValueLowStop">Auto</pref>
+      <pref name="sensorValueHighStop">Auto</pref>
+    </category>
+    <category name="encoderRCenterRangefinder">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">Auto</pref>
+      <pref name="physicalMeasureHighStop">Auto</pref>
+      <pref name="sensorValueLowStop">Auto</pref>
+      <pref name="sensorValueHighStop">Auto</pref>
+    </category>
+    <category name="encoderLCenterRangefinder">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">Auto</pref>
+      <pref name="physicalMeasureHighStop">Auto</pref>
+      <pref name="sensorValueLowStop">Auto</pref>
+      <pref name="sensorValueHighStop">Auto</pref>
+    </category>
+    <category name="encoderRSideRangefinder">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0</pref>
+      <pref name="physicalMeasureHighStop">1</pref>
+      <pref name="sensorValueLowStop">0</pref>
+      <pref name="sensorValueHighStop">1</pref>
+    </category>
+    <category name="encoderLSideRangefinder">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0</pref>
+      <pref name="physicalMeasureHighStop">1</pref>
+      <pref name="sensorValueLowStop">0</pref>
+      <pref name="sensorValueHighStop">1</pref>
+    </category>
+    <category name="loadWeightSensor">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">0.0</pref>
+      <pref name="physicalMeasureHighStop">1600.0</pref>
+      <pref name="sensorValueLowStop">950</pref>
+      <pref name="sensorValueHighStop">2550</pref>
+    </category>
+  </category>
+  <category name="detection">
+    <category name="camera3D">
+      <category name="forksCamera">
+        <pref name="xRotation">-179</pref>
+        <pref name="yRotation">0.5</pref>
+        <pref name="zRotation">-0.7</pref>
+        <pref name="xTranslation">-0.069</pref>
+        <pref name="yTranslation">0.0695</pref>
+        <pref name="zTranslation">-0.28</pref>
+      </category>
+      <category name="mastCamera">
+        <pref name="xRotation">180</pref>
+        <pref name="yRotation">0.0</pref>
+        <pref name="zRotation">-1.9</pref>
+        <pref name="xTranslation">0.0</pref>
+        <pref name="yTranslation">0.075</pref>
+        <pref name="zTranslation">1.745</pref>
+      </category>
+    </category>
+  </category>
+  <category name="perception">
+    <pref name="forksType">mySTLForksFile</pref>
+  </category>
+</Preferences>

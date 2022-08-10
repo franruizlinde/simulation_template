@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Preferences sdk="4.11.1">
+  <category name="general">
+    <pref name="modelFileName">Lmatic_AC_SE3073</pref>
+  </category>
+  <category name="odometrie">
+    <pref name="alpha0">15</pref>
+  </category>
+  <category name="traction_speed_control">
+    <pref name="zero_value">Auto</pref>
+  </category>
+  <category name="turret_position_control">
+    <pref name="zero_value">1920</pref>
+  </category>
+  <category name="battery">
+    <pref name="hardware">Emrol</pref>
+  </category>
+  <category name="navigationLaser">
+    <pref name="posOffset">cpx(0,0)</pref>
+    <pref name="laserRobCap">0</pref>
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="frontLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="rearLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="rearMobileLaser">
+    <pref name="inhibitedRayIndex">Auto</pref>
+    <pref name="inhibitedRayValue">Auto</pref>
+    <pref name="numberOfRayDuringCalibration">Auto</pref>
+  </category>
+  <category name="curtainLaser">
+    <pref name="phi">Auto</pref>
+    <pref name="cap">Auto</pref>
+    <pref name="height">Auto</pref>
+  </category>
+  <category name="sensors">
+    <category name="encoderVerticalForks">
+      <pref name="filteringRatio">1</pref>
+      <pref name="physicalMeasureLowStop">Auto</pref>
+      <pref name="physicalMeasureHighStop">Auto</pref>
+      <pref name="sensorValueLowStop">Auto</pref>
+      <pref name="sensorValueHighStop">Auto</pref>
+    </category>
+    <category name="encoderPalletTelemeter">
+      <pref name="filteringRatio">0.3</pref>
+      <pref name="physicalMeasureLowStop">Auto</pref>
+      <pref name="physicalMeasureHighStop">Auto</pref>
+      <pref name="sensorValueLowStop">Auto</pref>
+      <pref name="sensorValueHighStop">Auto</pref>
+    </category>
+  </category>
+  <category name="safety">
+    <pref name="forksLowInductiveHeight">0.44</pref>
+    <pref name="forksHighInductiveHeight">0.64</pref>
+  </category>
+</Preferences>
