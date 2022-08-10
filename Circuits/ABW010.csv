@@ -1,0 +1,11 @@
+Day;Hour;Minute;Second;Mission;srcPoint;dstPoint;
+0;0;0;0;Mission_1;135;170
+0;0;0;1;Mission_4;111;170
+0;0;0;10;Mission_2;136;170
+0;0;0;16;Mission_4;111;170
+0;0;0;28;Mission_3;107;170
+0;0;0;40;Mission_4;111;170
+0;0;0;56;Mission_2;136;170
+0;0;1;8;Mission_3;107;170
+0;0;1;13;Mission_1;135;170
+0;0;1;36;Mission_4;111;170

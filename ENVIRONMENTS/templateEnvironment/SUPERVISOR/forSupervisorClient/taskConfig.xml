@@ -1,0 +1,14 @@
+<MissionStore>
+<!--
+	<Button name='Force Battery on AGV1' params = 'taskName:"battery",robAuth:{1},'/>
+	<Button name='Force Battery on AGV2' params = 'taskName:"battery",robAuth:{2},'/>
+	<Button name='Force Battery on AGV3' params = 'taskName:"battery",robAuth:{3},'/>
+-->
+<!--
+	<Button name='flow1' params = 'taskName:"mission1",
+                                         src:100100000,
+                                         dst:200100000,
+                                         robAuth:{1,2,3},
+                                         allowSuspend:0,'/>
+-->
+</MissionStore>

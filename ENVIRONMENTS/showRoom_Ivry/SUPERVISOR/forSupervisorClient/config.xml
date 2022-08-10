@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Configuration file for supervisor client.
+	Define here the shortcuts to add to the supervisor client installed on the machine.
+	
+	The modifications will only appear locally. Each client can have a different config.xml file associated.
+	Ensure to copy this file in the right folder (see File path below) of each machine which should be updated 
+	with these modifications. Relaunch the client to apply the changes.
+	Note that [userName] should be replaced accordingly
+	
+	File path: C:\Users\[userName]\AppData\Roaming\Balyo\config.xml
+-->
+<Configuration>
+  <Version>2.1</Version>
+  <Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <ServerIP>127.0.0.1</ServerIP>
+    <ServerPort>8080</ServerPort>
+    <CultureTag>fr-FR</CultureTag>
+    <Shortcuts>
+      <FunctionShortcut Name="Example of Function shortcut" IconPath="C:\Program Files (x86)\RobotManagerInterface\Pictures\load.png" Function="name_of_the_function_to_be_called" />
+      <MissionShortcut Name="Name of a task defined in taskConfig.xml" IconPath="C:\Program Files (x86)\RobotManagerInterface\Pictures\load.png" />
+    </Shortcuts>
+  </Data>
+</Configuration>

@@ -1,0 +1,7 @@
+Day;Hour;Minute;Second;Mission;srcPoint;dstPoint
+1;0;0;20;CONV_to_SLOT;;102
+1;0;1;0;CONV_to_LINE;206;
+1;0;8;30;CONV_to_SLOT;293;264
+1;0;25;30;CONV_to_SLOT;206;103
+1;0;30;30;CONV_to_LINE;206;263
+1;0;20;50;CONV_to_SLOT;292;294

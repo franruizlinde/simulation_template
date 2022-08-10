@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Kind>Project</Kind>
+  <Id>1009</Id>
+  <Version>4.0</Version>
+  <ProjectType>Project</ProjectType>
+  <FirstFreeId>130</FirstFreeId>
+  <PalletWidthInUnit>800000</PalletWidthInUnit>
+  <PalletLengthInUnit>1200000</PalletLengthInUnit>
+  <CurrentMapType>FromGeoFile</CurrentMapType>
+  <Export>
+    <SHA1>217a11988e8f9edb7d0e872a62ddbdf88963afff</SHA1>
+    <UnitCountPerMeter>1000000</UnitCountPerMeter>
+    <AllLayer>
+      <Layer Id="100" ModelName="Common" />
+      <Layer Id="101" ModelName="P50_A-Frame">
+        <AllCrossroads Count="6">
+          <Crossroad Id="124">
+            <ListPortionInput>125</ListPortionInput>
+            <ListPortionOutput>130</ListPortionOutput>
+          </Crossroad>
+          <Crossroad Id="114">
+            <ListPortionInput>130</ListPortionInput>
+            <ListPortionOutput>116</ListPortionOutput>
+          </Crossroad>
+          <Crossroad Id="115">
+            <ListPortionInput>116</ListPortionInput>
+            <ListPortionOutput>131</ListPortionOutput>
+          </Crossroad>
+          <Crossroad Id="120">
+            <ListPortionInput>131</ListPortionInput>
+            <ListPortionOutput>122</ListPortionOutput>
+          </Crossroad>
+          <Crossroad Id="121">
+            <ListPortionInput>122</ListPortionInput>
+            <ListPortionOutput>132</ListPortionOutput>
+          </Crossroad>
+          <Crossroad Id="123">
+            <ListPortionInput>132</ListPortionInput>
+            <ListPortionOutput>125</ListPortionOutput>
+          </Crossroad>
+        </AllCrossroads>
+        <AllPortions Count="6">
+          <Portion Id="130">
+            <Points>-14935594;-606878;9.0791 4487152;2496899;9.0791</Points>
+          </Portion>
+          <Portion Id="131">
+            <Points>4144087;-2213452;162.5896 -13903956;3446151;162.5896</Points>
+          </Portion>
+          <Portion Id="116">
+            <Points>4487152;2496899;9.0791 4536306;2504734;9.0109 4585331;2512428;8.8064 4634094;2519845;8.4662 4682463;2526849;7.9914 4730304;2533317;7.3834 4777478;2539131;6.6441 4823847;2544186;5.7757 4869271;2548393;4.7812 4914294;2551745;3.7341 4959372;2554273;2.6871 5004488;2555978;1.64 5049628;2556857;0.593 5094776;2556912;359.5459 5139918;2556142;358.4989 5185038;2554547;357.4518 5230122;2552128;356.4047 5275153;2548885;355.3577 5320118;2544820;354.3106 5365002;2539934;353.2636 5409788;2534228;352.2165 5454463;2527706;351.1695 5499011;2520367;350.1224 5543417;2512216;349.0753 5587667;2503255;348.0283 5631746;2493487;346.9812 5675639;2482915;345.9342 5719332;2471543;344.8871 5762809;2459374;343.8401 5806057;2446412;342.793 5849061;2432663;341.7459 5891807;2418130;340.6989 5934279;2402818;339.6518 5976465;2386733;338.6048 6018350;2369880;337.5577 6059920;2352264;336.5107 6101161;2333891;335.4636 6142059;2314768;334.4166 6182601;2294900;333.3695 6222773;2274295;332.3224 6262562;2252960;331.2754 6301955;2230900;330.2283 6340938;2208125;329.1813 6379498;2184641;328.1342 6417622;2160457;327.0872 6455298;2135580;326.0401 6492514;2110018;324.993 6529256;2083781;323.946 6565512;2056876;322.8989 6601271;2029314;321.8519 6636520;2001103;320.8048 6671248;1972252;319.7578 6705443;1942772;318.7107 6739093;1912671;317.6636 6772188;1881961;316.6166 6804716;1850651;315.5695 6836666;1818752;314.5225 6868028;1786275;313.4754 6898791;1753229;312.4284 6928946;1719628;311.3813 6958481;1685480;310.3342 6987388;1650799;309.2872 7015655;1615595;308.2401 7043275;1579881;307.1931 7070238;1543668;306.146 7096534;1506968;305.099 7122156;1469794;304.0519 7147093;1432157;303.0048 7171339;1394072;301.9578 7194885;1355549;300.9107 7217723;1316603;299.8637 7239845;1277246;298.8166 7261245;1237492;297.7696 7281914;1197353;296.7225 7301847;1156842;295.6755 7321036;1115975;294.6284 7339475;1074763;293.5813 7357158;1033222;292.5343 7374078;991364;291.4872 7390232;949205;290.4402 7405611;906757;289.3931 7420213;864035;288.3461 7434032;821053;287.299 7447063;777826;286.2519 7459301;734368;285.2049 7470744;690694;284.1578 7481387;646818;283.1108 7491226;602755;282.0637 7500258;558519;281.0167 7508480;514126;279.9696 7515890;469589;278.9225 7522485;424925;277.8755 7528262;380148;276.8284 7533220;335273;275.7814 7537358;290314;274.7343 7540673;245288;273.6873 7543164;200208;272.6402 7544832;155091;271.5931 7545675;109950;270.5461 7545693;64802;269.499 7544885;19661;268.452 7543253;-25457;267.4049 7540797;-70539;266.3579 7537518;-115568;265.3108 7533416;-160529;264.2637 7528493;-205408;263.2167 7522751;-250190;262.1696 7516192;-294860;261.1226 7508817;-339402;260.0755 7500630;-383801;259.0285 7491632;-428044;257.9814 7481828;-472115;256.9344 7471220;-516000;255.8873 7459812;-559683;254.8402 7447608;-603150;253.7932 7434611;-646388;252.7461 7420826;-689380;251.6991 7406258;-732114;250.652 7390912;-774574;249.605 7374792;-816746;248.5579 7357904;-858617;247.5108 7340254;-900173;246.4638 7321848;-941399;245.4167 7302691;-982281;244.3697 7282791;-1022807;243.3226 7262153;-1062962;242.2756 7240785;-1102734;241.2285 7218693;-1142108;240.1814 7195886;-1181073;239.1344 7172371;-1219614;238.0873 7148155;-1257718;237.0403 7123247;-1295374;235.9932 7097655;-1332569;234.9462 7071388;-1369289;233.8991 7044454;-1405524;232.852 7016862;-1441260;231.805 6988622;-1476486;230.7579 6959743;-1511190;229.7109 6930234;-1545361;228.6638 6900107;-1578986;227.6168 6869369;-1612056;226.5697 6838033;-1644558;225.5227 6806108;-1676482;224.4756 6773604;-1707818;223.4285 6740534;-1738554;222.3815 6706907;-1768681;221.3344 6672736;-1798189;220.2874 6638031;-1827067;219.2403 6602804;-1855306;218.1933 6567067;-1882896;217.1462 6530832;-1909829;216.0991 6494111;-1936095;215.0521 6456915;-1961686;214.005 6419259;-1986593;212.958 6381153;-2010808;211.9109 6342612;-2034322;210.8639 6303647;-2057128;209.8168 6264272;-2079218;208.7697 6224500;-2100585;207.7227 6184344;-2121222;206.6756 6143817;-2141122;205.6286 6102934;-2160277;204.5815 6061708;-2178682;203.5345 6020152;-2196331;202.4874 5978280;-2213218;201.4403 5936107;-2229336;200.3933 5893647;-2244681;199.3462 5850913;-2259248;198.2992 5807920;-2273032;197.2521 5764682;-2286027;196.2051 5721214;-2298230;195.158 5677531;-2309637;194.1109 5633646;-2320244;193.0639 5589575;-2330047;192.0168 5545332;-2339043;190.9698 5500932;-2347229;189.9227 5456389;-2354602;188.8757 5411720;-2361160;187.8286 5366938;-2366901;186.7816 5322059;-2371823;185.7345 5277097;-2375923;184.6874 5232068;-2379201;183.6404 5186986;-2381656;182.5933 5141867;-2383287;181.5463 5096726;-2384093;180.4992 5051578;-2384074;179.4522 5006437;-2383229;178.4051 4961320;-2381561;177.358 4916240;-2379068;176.311 4871214;-2375751;175.2639 4826256;-2371613;174.2169 4781381;-2366653;173.1698 4736603;-2360874;172.1228 4691940;-2354278;171.0757 4647404;-2346867;170.0286 4603011;-2338644;168.9816 4558775;-2329610;167.9345 4514712;-2319770;166.8875 4470377;-2309026;165.893 4425230;-2297306;165.0245 4379396;-2284718;164.2852 4332998;-2271386;163.6773 4286154;-2257447;163.2025 4238980;-2243043;162.8623 4191588;-2228326;162.6578 4144087;-2213452;162.5896</Points>
+          </Portion>
+          <Portion Id="132">
+            <Points>-15443855;2720656;247.8587 -16167135;943103;247.8587</Points>
+          </Portion>
+          <Portion Id="122">
+            <Points>-13903984;3446057;162.5896 -13951141;3460809;162.71 -13997908;3475223;163.0701 -14043893;3488978;163.6666 -14088702;3501776;164.4936 -14131933;3513363;165.5433 -14173185;3523533;166.8056 -14212054;3532141;168.2686 -14248141;3539113;169.9182 -14281176;3544462;171.7335 -14313382;3548609;173.5941 -14345706;3551707;175.4547 -14378113;3553755;177.3153 -14410570;3554749;179.1759 -14443042;3554689;181.0365 -14475495;3553574;182.8971 -14507894;3551407;184.7577 -14540206;3548188;186.6182 -14572397;3543922;188.4788 -14604432;3538614;190.3394 -14636278;3532268;192.2 -14667901;3524891;194.0606 -14699268;3516492;195.9212 -14730345;3507079;197.7818 -14761101;3496661;199.6424 -14791502;3485251;201.503 -14821517;3472859;203.3635 -14851113;3459499;205.2241 -14880260;3445186;207.0847 -14908927;3429934;208.9453 -14937084;3413759;210.8059 -14964701;3396678;212.6665 -14991748;3378710;214.5271 -15018198;3359873;216.3877 -15044023;3340188;218.2483 -15069194;3319674;220.1088 -15093687;3298353;221.9694 -15117474;3276249;223.83 -15140531;3253384;225.6906 -15162833;3229783;227.5512 -15184358;3205470;229.4118 -15205081;3180470;231.2724 -15224982;3154812;233.133 -15244040;3128520;234.9935 -15262234;3101624;236.8541 -15279545;3074151;238.7147 -15296455;3045273;240.5301 -15314060;3013009;242.1797 -15332173;2977557;243.6426 -15350599;2939274;244.905 -15369194;2898562;245.9547 -15387858;2855863;246.7817 -15406535;2811647;247.3781 -15425201;2766409;247.7383 -15443855;2720655;247.8587</Points>
+          </Portion>
+          <Portion Id="125">
+            <Points>-16167134;943103;247.8587 -16185805;897122;247.9802 -16204105;851506;248.3435 -16221672;806624;248.9452 -16238177;762852;249.7794 -16253327;720570;250.8381 -16266883;680170;252.111 -16278668;642046;253.586 -16288572;606596;255.2488 -16296602;574054;257.0767 -16303377;542150;258.9455 -16309108;510042;260.8143 -16313789;477764;262.6831 -16317414;445351;264.5519 -16319981;412837;266.4207 -16321486;380256;268.2895 -16321928;347643;270.1583 -16321306;315034;272.0271 -16319621;282462;273.896 -16316874;249962;275.7648 -16313069;217570;277.6336 -16308210;185318;279.5024 -16302302;153243;281.3712 -16295351;121376;283.24 -16287364;89754;285.1088 -16278350;58409;286.9776 -16268319;27374;288.8464 -16257281;-3316;290.7152 -16245248;-33630;292.584 -16232233;-63536;294.4529 -16218250;-93002;296.3217 -16203313;-121996;298.1905 -16187439;-150488;300.0593 -16170644;-178446;301.9281 -16152946;-205842;303.7969 -16134364;-232647;305.6657 -16114918;-258831;307.5345 -16094628;-284367;309.4033 -16073516;-309228;311.2721 -16051605;-333387;313.1409 -16028917;-356819;315.0097 -16005478;-379498;316.8786 -15981311;-401401;318.7474 -15956443;-422504;320.6162 -15930900;-442785;322.485 -15904709;-462223;324.3538 -15877899;-480795;326.2226 -15850497;-498484;328.0914 -15822532;-515270;329.9602 -15794035;-531134;331.829 -15765036;-546061;333.6978 -15735565;-560035;335.5666 -15705655;-573039;337.4354 -15675336;-585062;339.3043 -15644641;-596089;341.1731 -15613603;-606110;343.0419 -15582255;-615113;344.9107 -15550630;-623088;346.7795 -15518762;-630029;348.6483 -15486684;-635926;350.5171 -15454431;-640774;352.3859 -15422037;-644568;354.2547 -15389536;-647303;356.1235 -15356964;-648977;357.9923 -15324354;-649588;359.8611 -15290839;-649121;1.689 -15254067;-647485;3.3518 -15214267;-644622;4.8268 -15171848;-640547;6.0998 -15127237;-635344;7.1584 -15080866;-629160;7.9926 -15033176;-622190;8.5943 -14984605;-614674;8.9576 -14935593;-606877;9.0791</Points>
+          </Portion>
+        </AllPortions>
+        <AllDestinationPoints>
+          <DestinationPoint Id="128" PortionDataId="130" Percent="0.84256722294823128" DestinationType="Normal" Title="stop_1">
+            <Point>1429375;2008263</Point>
+          </DestinationPoint>
+          <DestinationPoint Id="127" PortionDataId="131" Percent="0.87990381833145714" DestinationType="Normal" Title="stop_2">
+            <Point>-11736455;2766454</Point>
+          </DestinationPoint>
+          <DestinationPoint Id="126" PortionDataId="132" Percent="0.42395170577415103" DestinationType="Taxi" Title="taxi1">
+            <Point>-15750491;1967059</Point>
+          </DestinationPoint>
+          <DestinationPoint Id="129" PortionDataId="132" Percent="0.28931096833361991" DestinationType="Charger" Title="batt1">
+            <Point>-15653108;2206390</Point>
+          </DestinationPoint>
+        </AllDestinationPoints>
+      </Layer>
+    </AllLayer>
+  </Export>
+  <MaxZOrder>0</MaxZOrder>
+  <CurrentAgvModel>P50_A-Frame</CurrentAgvModel>
+  <CurrentPreferenceCircuit>P50_A-Frame_circuit.xml</CurrentPreferenceCircuit>
+  <CurrentGabarit>Cantonnement</CurrentGabarit>
+  <ListOfLayer>
+    <LayerData>
+      <Kind>Layer</Kind>
+      <Id>100</Id>
+      <ZOrder>0</ZOrder>
+      <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+      <Title>Common</Title>
+      <BalyoTitle>Common</BalyoTitle>
+      <TurretPoseX>1</TurretPoseX>
+      <MaxTurretAngleInDegree>1.8</MaxTurretAngleInDegree>
+      <MaxVelY>0.3</MaxVelY>
+      <RobotOvershootCorner_X>0</RobotOvershootCorner_X>
+      <RobotOvershootCorner_Y>0</RobotOvershootCorner_Y>
+      <ListOfControlPointData />
+      <ListOfComputedPointData />
+      <ListOfPortionData />
+      <ListOfZoneData />
+      <ListOfZoneStockData />
+      <ListOfZoneRackData />
+      <ListOfDestinationPointData />
+      <ListOfGuideData />
+      <ListOfMeasurerPointData />
+      <ListOfMeasurerData />
+      <AgvModel>
+        <TurretPosition xsi:nil="true" />
+        <Cantonment />
+        <Empty />
+        <Carry />
+        <Shape />
+        <MaxTurretAngleInDegree>-90</MaxTurretAngleInDegree>
+        <MinTurretAngleInDegree>90</MinTurretAngleInDegree>
+        <MaxTurretSpeed>1.8</MaxTurretSpeed>
+        <MaxDistanceToWheels xsi:nil="true" />
+        <MaxVelX xsi:nil="true" />
+        <MaxVelY xsi:nil="true" />
+        <MaxVelZ xsi:nil="true" />
+        <TurretPoseX xsi:nil="true" />
+        <ListOfLaser />
+        <FrontDSlowCarry>0</FrontDSlowCarry>
+        <FrontDStopCarry>0</FrontDStopCarry>
+        <RearDSlowCarry>0</RearDSlowCarry>
+        <RearDStopCarry>0</RearDStopCarry>
+        <AgvName>Common</AgvName>
+      </AgvModel>
+    </LayerData>
+    <LayerData>
+      <Kind>Layer</Kind>
+      <Id>101</Id>
+      <ZOrder>0</ZOrder>
+      <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+      <Title>P50_A-Frame</Title>
+      <BalyoTitle>P50_A-Frame</BalyoTitle>
+      <TurretPoseX>1.15</TurretPoseX>
+      <MaxTurretAngleInDegree>45</MaxTurretAngleInDegree>
+      <MaxVelY>0.3</MaxVelY>
+      <RobotOvershootCorner_X>1.534</RobotOvershootCorner_X>
+      <RobotOvershootCorner_Y>0.82</RobotOvershootCorner_Y>
+      <ListOfControlPointData>
+        <ControlPointData>
+          <Kind>ControlPoint</Kind>
+          <Id>102</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>102</Title>
+          <BalyoTitle>102</BalyoTitle>
+          <PtInUnit>-16422224;-844443</PtInUnit>
+          <AngleInDegree>9.079165726176722</AngleInDegree>
+        </ControlPointData>
+        <ControlPointData>
+          <Kind>ControlPoint</Kind>
+          <Id>103</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>103</Title>
+          <BalyoTitle>103</BalyoTitle>
+          <PtInUnit>5474623;2654698</PtInUnit>
+          <AngleInDegree>9.079165726176722</AngleInDegree>
+        </ControlPointData>
+        <ControlPointData>
+          <Kind>ControlPoint</Kind>
+          <Id>111</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>111</Title>
+          <BalyoTitle>111</BalyoTitle>
+          <PtInUnit>6052455;-2811888</PtInUnit>
+          <AngleInDegree>162.58960406608443</AngleInDegree>
+        </ControlPointData>
+        <ControlPointData>
+          <Kind>ControlPoint</Kind>
+          <Id>112</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>112</Title>
+          <BalyoTitle>112</BalyoTitle>
+          <PtInUnit>-15065296;3810330</PtInUnit>
+          <AngleInDegree>162.58960406608443</AngleInDegree>
+        </ControlPointData>
+        <ControlPointData>
+          <Kind>ControlPoint</Kind>
+          <Id>117</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>117</Title>
+          <BalyoTitle>117</BalyoTitle>
+          <PtInUnit>-14745330;4437368</PtInUnit>
+          <AngleInDegree>247.85876219549982</AngleInDegree>
+        </ControlPointData>
+        <ControlPointData>
+          <Kind>ControlPoint</Kind>
+          <Id>118</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>118</Title>
+          <BalyoTitle>118</BalyoTitle>
+          <PtInUnit>-16810224;-637368</PtInUnit>
+          <AngleInDegree>247.85876219549982</AngleInDegree>
+        </ControlPointData>
+      </ListOfControlPointData>
+      <ListOfComputedPointData>
+        <ComputedPointData>
+          <Kind>ComputedPoint</Kind>
+          <Id>114</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>114</Title>
+          <BalyoTitle>114</BalyoTitle>
+          <PtInUnit>4487152;2496899</PtInUnit>
+          <AssociatedPortionId>104</AssociatedPortionId>
+          <AssociatedCurveId>116</AssociatedCurveId>
+          <StartEnd>Start</StartEnd>
+          <AngleInDegree>9.079165726176722</AngleInDegree>
+          <IsMoveable>true</IsMoveable>
+        </ComputedPointData>
+        <ComputedPointData>
+          <Kind>ComputedPoint</Kind>
+          <Id>115</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>115</Title>
+          <BalyoTitle>115</BalyoTitle>
+          <PtInUnit>4144087;-2213452</PtInUnit>
+          <AssociatedPortionId>113</AssociatedPortionId>
+          <AssociatedCurveId>116</AssociatedCurveId>
+          <StartEnd>End</StartEnd>
+          <AngleInDegree>162.58960406608443</AngleInDegree>
+          <IsMoveable>false</IsMoveable>
+        </ComputedPointData>
+        <ComputedPointData>
+          <Kind>ComputedPoint</Kind>
+          <Id>120</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>120</Title>
+          <BalyoTitle>120</BalyoTitle>
+          <PtInUnit>-13903956;3446151</PtInUnit>
+          <AssociatedPortionId>113</AssociatedPortionId>
+          <AssociatedCurveId>122</AssociatedCurveId>
+          <StartEnd>Start</StartEnd>
+          <AngleInDegree>162.58960406608443</AngleInDegree>
+          <IsMoveable>false</IsMoveable>
+        </ComputedPointData>
+        <ComputedPointData>
+          <Kind>ComputedPoint</Kind>
+          <Id>121</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>121</Title>
+          <BalyoTitle>121</BalyoTitle>
+          <PtInUnit>-15443855;2720656</PtInUnit>
+          <AssociatedPortionId>119</AssociatedPortionId>
+          <AssociatedCurveId>122</AssociatedCurveId>
+          <StartEnd>End</StartEnd>
+          <AngleInDegree>247.85876219549982</AngleInDegree>
+          <IsMoveable>false</IsMoveable>
+        </ComputedPointData>
+        <ComputedPointData>
+          <Kind>ComputedPoint</Kind>
+          <Id>123</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>123</Title>
+          <BalyoTitle>123</BalyoTitle>
+          <PtInUnit>-16167135;943103</PtInUnit>
+          <AssociatedPortionId>119</AssociatedPortionId>
+          <AssociatedCurveId>125</AssociatedCurveId>
+          <StartEnd>Start</StartEnd>
+          <AngleInDegree>247.85876219549982</AngleInDegree>
+          <IsMoveable>false</IsMoveable>
+        </ComputedPointData>
+        <ComputedPointData>
+          <Kind>ComputedPoint</Kind>
+          <Id>124</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>124</Title>
+          <BalyoTitle>124</BalyoTitle>
+          <PtInUnit>-14935594;-606878</PtInUnit>
+          <AssociatedPortionId>104</AssociatedPortionId>
+          <AssociatedCurveId>125</AssociatedCurveId>
+          <StartEnd>End</StartEnd>
+          <AngleInDegree>9.079165726176722</AngleInDegree>
+          <IsMoveable>false</IsMoveable>
+        </ComputedPointData>
+      </ListOfComputedPointData>
+      <ListOfPortionData>
+        <PortionData>
+          <Kind>Portion</Kind>
+          <Id>104</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>104</Title>
+          <BalyoTitle>104</BalyoTitle>
+          <LeftId>102</LeftId>
+          <RightId>103</RightId>
+          <IsRigid>true</IsRigid>
+          <CriteriumForValidation>OptimizeSpeed</CriteriumForValidation>
+          <Radius>1</Radius>
+          <MaxOvershoot>5</MaxOvershoot>
+          <StartPointOffset>0</StartPointOffset>
+          <AllPoints>
+            <Kind>PortionDataPoints</Kind>
+            <Id>104</Id>
+            <BoundingBoxInUnit>-16422224;2654698;5474623;-844443</BoundingBoxInUnit>
+            <PointCollectionInUnit>-16422224;-844443 5474623;2654698</PointCollectionInUnit>
+            <PointCollectionDerivedInUnit>21896847;3499141 21896847;3499141</PointCollectionDerivedInUnit>
+          </AllPoints>
+          <ListOfIndexOfForceRule />
+          <TurnOptionFlag>Normal</TurnOptionFlag>
+        </PortionData>
+        <PortionData>
+          <Kind>Portion</Kind>
+          <Id>113</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>113</Title>
+          <BalyoTitle>113</BalyoTitle>
+          <LeftId>111</LeftId>
+          <RightId>112</RightId>
+          <IsRigid>true</IsRigid>
+          <CriteriumForValidation>OptimizeSpeed</CriteriumForValidation>
+          <Radius>1</Radius>
+          <MaxOvershoot>5</MaxOvershoot>
+          <StartPointOffset>0</StartPointOffset>
+          <AllPoints>
+            <Kind>PortionDataPoints</Kind>
+            <Id>113</Id>
+            <BoundingBoxInUnit>-15065296;3810330;6052455;-2811888</BoundingBoxInUnit>
+            <PointCollectionInUnit>6052455;-2811888 -15065296;3810330</PointCollectionInUnit>
+            <PointCollectionDerivedInUnit>-21117751;6622218 -21117751;6622218</PointCollectionDerivedInUnit>
+          </AllPoints>
+          <ListOfIndexOfForceRule />
+          <TurnOptionFlag>Normal</TurnOptionFlag>
+        </PortionData>
+        <PortionData>
+          <Kind>Portion</Kind>
+          <Id>116</Id>
+          <BoundingBoxInUnit>4487152;2496899;4144087;-2213452</BoundingBoxInUnit>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>116</Title>
+          <BalyoTitle>116</BalyoTitle>
+          <LeftId>114</LeftId>
+          <RightId>115</RightId>
+          <CriteriumForValidation>OptimizeKiwiByStartPoint</CriteriumForValidation>
+          <Radius>1</Radius>
+          <MaxOvershoot>5</MaxOvershoot>
+          <StartPointOffset>0</StartPointOffset>
+          <AllPoints>
+            <Kind>PortionDataPoints</Kind>
+            <Id>116</Id>
+            <BoundingBoxInUnit>4487152;2496899;4144087;-2213452</BoundingBoxInUnit>
+            <Validation>
+              <Criterium>OptimizeKiwiByStartPoint</Criterium>
+            </Validation>
+            <PointCollectionInUnit>4487152;2496899;90791 4536306;2504734;90109 4585331;2512428;88064 4634094;2519845;84662 4682463;2526849;79914 4730304;2533317;73834 4777478;2539131;66441 4823847;2544186;57757 4869271;2548393;47812 4914294;2551745;37341 4959372;2554273;26871 5004488;2555978;16400 5049628;2556857;5930 5094776;2556912;3595459 5139918;2556142;3584989 5185038;2554547;3574518 5230122;2552128;3564047 5275153;2548885;3553577 5320118;2544820;3543106 5365002;2539934;3532636 5409788;2534228;3522165 5454463;2527706;3511695 5499011;2520367;3501224 5543417;2512216;3490753 5587667;2503255;3480283 5631746;2493487;3469812 5675639;2482915;3459342 5719332;2471543;3448871 5762809;2459374;3438401 5806057;2446412;3427930 5849061;2432663;3417459 5891807;2418130;3406989 5934279;2402818;3396518 5976465;2386733;3386048 6018350;2369880;3375577 6059920;2352264;3365107 6101161;2333891;3354636 6142059;2314768;3344166 6182601;2294900;3333695 6222773;2274295;3323224 6262562;2252960;3312754 6301955;2230900;3302283 6340938;2208125;3291813 6379498;2184641;3281342 6417622;2160457;3270872 6455298;2135580;3260401 6492514;2110018;3249930 6529256;2083781;3239460 6565512;2056876;3228989 6601271;2029314;3218519 6636520;2001103;3208048 6671248;1972252;3197578 6705443;1942772;3187107 6739093;1912671;3176636 6772188;1881961;3166166 6804716;1850651;3155695 6836666;1818752;3145225 6868028;1786275;3134754 6898791;1753229;3124284 6928946;1719628;3113813 6958481;1685480;3103342 6987388;1650799;3092872 7015655;1615595;3082401 7043275;1579881;3071931 7070238;1543668;3061460 7096534;1506968;3050990 7122156;1469794;3040519 7147093;1432157;3030048 7171339;1394072;3019578 7194885;1355549;3009107 7217723;1316603;2998637 7239845;1277246;2988166 7261245;1237492;2977696 7281914;1197353;2967225 7301847;1156842;2956755 7321036;1115975;2946284 7339475;1074763;2935813 7357158;1033222;2925343 7374078;991364;2914872 7390232;949205;2904402 7405611;906757;2893931 7420213;864035;2883461 7434032;821053;2872990 7447063;777826;2862519 7459301;734368;2852049 7470744;690694;2841578 7481387;646818;2831108 7491226;602755;2820637 7500258;558519;2810167 7508480;514126;2799696 7515890;469589;2789225 7522485;424925;2778755 7528262;380148;2768284 7533220;335273;2757814 7537358;290314;2747343 7540673;245288;2736873 7543164;200208;2726402 7544832;155091;2715931 7545675;109950;2705461 7545693;64802;2694990 7544885;19661;2684520 7543253;-25457;2674049 7540797;-70539;2663579 7537518;-115568;2653108 7533416;-160529;2642637 7528493;-205408;2632167 7522751;-250190;2621696 7516192;-294860;2611226 7508817;-339402;2600755 7500630;-383801;2590285 7491632;-428044;2579814 7481828;-472115;2569344 7471220;-516000;2558873 7459812;-559683;2548402 7447608;-603150;2537932 7434611;-646388;2527461 7420826;-689380;2516991 7406258;-732114;2506520 7390912;-774574;2496050 7374792;-816746;2485579 7357904;-858617;2475108 7340254;-900173;2464638 7321848;-941399;2454167 7302691;-982281;2443697 7282791;-1022807;2433226 7262153;-1062962;2422756 7240785;-1102734;2412285 7218693;-1142108;2401814 7195886;-1181073;2391344 7172371;-1219614;2380873 7148155;-1257718;2370403 7123247;-1295374;2359932 7097655;-1332569;2349462 7071388;-1369289;2338991 7044454;-1405524;2328520 7016862;-1441260;2318050 6988622;-1476486;2307579 6959743;-1511190;2297109 6930234;-1545361;2286638 6900107;-1578986;2276168 6869369;-1612056;2265697 6838033;-1644558;2255227 6806108;-1676482;2244756 6773604;-1707818;2234285 6740534;-1738554;2223815 6706907;-1768681;2213344 6672736;-1798189;2202874 6638031;-1827067;2192403 6602804;-1855306;2181933 6567067;-1882896;2171462 6530832;-1909829;2160991 6494111;-1936095;2150521 6456915;-1961686;2140050 6419259;-1986593;2129580 6381153;-2010808;2119109 6342612;-2034322;2108639 6303647;-2057128;2098168 6264272;-2079218;2087697 6224500;-2100585;2077227 6184344;-2121222;2066756 6143817;-2141122;2056286 6102934;-2160277;2045815 6061708;-2178682;2035345 6020152;-2196331;2024874 5978280;-2213218;2014403 5936107;-2229336;2003933 5893647;-2244681;1993462 5850913;-2259248;1982992 5807920;-2273032;1972521 5764682;-2286027;1962051 5721214;-2298230;1951580 5677531;-2309637;1941109 5633646;-2320244;1930639 5589575;-2330047;1920168 5545332;-2339043;1909698 5500932;-2347229;1899227 5456389;-2354602;1888757 5411720;-2361160;1878286 5366938;-2366901;1867816 5322059;-2371823;1857345 5277097;-2375923;1846874 5232068;-2379201;1836404 5186986;-2381656;1825933 5141867;-2383287;1815463 5096726;-2384093;1804992 5051578;-2384074;1794522 5006437;-2383229;1784051 4961320;-2381561;1773580 4916240;-2379068;1763110 4871214;-2375751;1752639 4826256;-2371613;1742169 4781381;-2366653;1731698 4736603;-2360874;1721228 4691940;-2354278;1710757 4647404;-2346867;1700286 4603011;-2338644;1689816 4558775;-2329610;1679345 4514712;-2319770;1668875 4470377;-2309026;1658930 4425230;-2297306;1650245 4379396;-2284718;1642852 4332998;-2271386;1636773 4286154;-2257447;1632025 4238980;-2243043;1628623 4191588;-2228326;1626578 4144087;-2213452;1625896</PointCollectionInUnit>
+            <PointCollectionDerivedInUnit />
+          </AllPoints>
+          <ListOfIndexOfForceRule />
+          <TurnOptionFlag>Normal</TurnOptionFlag>
+        </PortionData>
+        <PortionData>
+          <Kind>Portion</Kind>
+          <Id>119</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>119</Title>
+          <BalyoTitle>119</BalyoTitle>
+          <LeftId>117</LeftId>
+          <RightId>118</RightId>
+          <IsRigid>true</IsRigid>
+          <CriteriumForValidation>OptimizeSpeed</CriteriumForValidation>
+          <Radius>1</Radius>
+          <MaxOvershoot>5</MaxOvershoot>
+          <StartPointOffset>0</StartPointOffset>
+          <AllPoints>
+            <Kind>PortionDataPoints</Kind>
+            <Id>119</Id>
+            <BoundingBoxInUnit>-16810224;4437368;-14745330;-637368</BoundingBoxInUnit>
+            <PointCollectionInUnit>-14745330;4437368 -16810224;-637368</PointCollectionInUnit>
+            <PointCollectionDerivedInUnit>-2064894;-5074736 -2064894;-5074736</PointCollectionDerivedInUnit>
+          </AllPoints>
+          <ListOfIndexOfForceRule />
+          <TurnOptionFlag>Normal</TurnOptionFlag>
+        </PortionData>
+        <PortionData>
+          <Kind>Portion</Kind>
+          <Id>122</Id>
+          <BoundingBoxInUnit>-13903956;3446151;-15443855;2720656</BoundingBoxInUnit>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>122</Title>
+          <BalyoTitle>122</BalyoTitle>
+          <LeftId>120</LeftId>
+          <RightId>121</RightId>
+          <CriteriumForValidation>OptimizeKiwiByRadius</CriteriumForValidation>
+          <Radius>1</Radius>
+          <MaxOvershoot>5</MaxOvershoot>
+          <StartPointOffset>0</StartPointOffset>
+          <AllPoints>
+            <Kind>PortionDataPoints</Kind>
+            <Id>122</Id>
+            <BoundingBoxInUnit>-13903956;3446151;-15443855;2720656</BoundingBoxInUnit>
+            <Validation>
+              <Criterium>OptimizeKiwiByRadius</Criterium>
+            </Validation>
+            <PointCollectionInUnit>-13903984;3446057;1625896 -13951141;3460809;1627100 -13997908;3475223;1630701 -14043893;3488978;1636666 -14088702;3501776;1644936 -14131933;3513363;1655433 -14173185;3523533;1668056 -14212054;3532141;1682686 -14248141;3539113;1699182 -14281176;3544462;1717335 -14313382;3548609;1735941 -14345706;3551707;1754547 -14378113;3553755;1773153 -14410570;3554749;1791759 -14443042;3554689;1810365 -14475495;3553574;1828971 -14507894;3551407;1847577 -14540206;3548188;1866182 -14572397;3543922;1884788 -14604432;3538614;1903394 -14636278;3532268;1922000 -14667901;3524891;1940606 -14699268;3516492;1959212 -14730345;3507079;1977818 -14761101;3496661;1996424 -14791502;3485251;2015030 -14821517;3472859;2033635 -14851113;3459499;2052241 -14880260;3445186;2070847 -14908927;3429934;2089453 -14937084;3413759;2108059 -14964701;3396678;2126665 -14991748;3378710;2145271 -15018198;3359873;2163877 -15044023;3340188;2182483 -15069194;3319674;2201088 -15093687;3298353;2219694 -15117474;3276249;2238300 -15140531;3253384;2256906 -15162833;3229783;2275512 -15184358;3205470;2294118 -15205081;3180470;2312724 -15224982;3154812;2331330 -15244040;3128520;2349935 -15262234;3101624;2368541 -15279545;3074151;2387147 -15296455;3045273;2405301 -15314060;3013009;2421797 -15332173;2977557;2436426 -15350599;2939274;2449050 -15369194;2898562;2459547 -15387858;2855863;2467817 -15406535;2811647;2473781 -15425201;2766409;2477383 -15443855;2720655;2478587</PointCollectionInUnit>
+            <PointCollectionDerivedInUnit />
+          </AllPoints>
+          <ListOfIndexOfForceRule />
+          <TurnOptionFlag>Normal</TurnOptionFlag>
+        </PortionData>
+        <PortionData>
+          <Kind>Portion</Kind>
+          <Id>125</Id>
+          <BoundingBoxInUnit>-16167135;943103;-14935594;-606878</BoundingBoxInUnit>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>125</Title>
+          <BalyoTitle>125</BalyoTitle>
+          <LeftId>123</LeftId>
+          <RightId>124</RightId>
+          <CriteriumForValidation>OptimizeKiwiByRadius</CriteriumForValidation>
+          <Radius>1</Radius>
+          <MaxOvershoot>5</MaxOvershoot>
+          <StartPointOffset>0</StartPointOffset>
+          <AllPoints>
+            <Kind>PortionDataPoints</Kind>
+            <Id>125</Id>
+            <BoundingBoxInUnit>-16167135;943103;-14935594;-606878</BoundingBoxInUnit>
+            <Validation>
+              <Criterium>OptimizeKiwiByRadius</Criterium>
+            </Validation>
+            <PointCollectionInUnit>-16167134;943103;2478587 -16185805;897122;2479802 -16204105;851506;2483435 -16221672;806624;2489452 -16238177;762852;2497794 -16253327;720570;2508381 -16266883;680170;2521110 -16278668;642046;2535860 -16288572;606596;2552488 -16296602;574054;2570767 -16303377;542150;2589455 -16309108;510042;2608143 -16313789;477764;2626831 -16317414;445351;2645519 -16319981;412837;2664207 -16321486;380256;2682895 -16321928;347643;2701583 -16321306;315034;2720271 -16319621;282462;2738960 -16316874;249962;2757648 -16313069;217570;2776336 -16308210;185318;2795024 -16302302;153243;2813712 -16295351;121376;2832400 -16287364;89754;2851088 -16278350;58409;2869776 -16268319;27374;2888464 -16257281;-3316;2907152 -16245248;-33630;2925840 -16232233;-63536;2944529 -16218250;-93002;2963217 -16203313;-121996;2981905 -16187439;-150488;3000593 -16170644;-178446;3019281 -16152946;-205842;3037969 -16134364;-232647;3056657 -16114918;-258831;3075345 -16094628;-284367;3094033 -16073516;-309228;3112721 -16051605;-333387;3131409 -16028917;-356819;3150097 -16005478;-379498;3168786 -15981311;-401401;3187474 -15956443;-422504;3206162 -15930900;-442785;3224850 -15904709;-462223;3243538 -15877899;-480795;3262226 -15850497;-498484;3280914 -15822532;-515270;3299602 -15794035;-531134;3318290 -15765036;-546061;3336978 -15735565;-560035;3355666 -15705655;-573039;3374354 -15675336;-585062;3393043 -15644641;-596089;3411731 -15613603;-606110;3430419 -15582255;-615113;3449107 -15550630;-623088;3467795 -15518762;-630029;3486483 -15486684;-635926;3505171 -15454431;-640774;3523859 -15422037;-644568;3542547 -15389536;-647303;3561235 -15356964;-648977;3579923 -15324354;-649588;3598611 -15290839;-649121;16890 -15254067;-647485;33518 -15214267;-644622;48268 -15171848;-640547;60998 -15127237;-635344;71584 -15080866;-629160;79926 -15033176;-622190;85943 -14984605;-614674;89576 -14935593;-606877;90791</PointCollectionInUnit>
+            <PointCollectionDerivedInUnit />
+          </AllPoints>
+          <ListOfIndexOfForceRule />
+          <TurnOptionFlag>Normal</TurnOptionFlag>
+        </PortionData>
+      </ListOfPortionData>
+      <ListOfZoneData />
+      <ListOfZoneStockData />
+      <ListOfZoneRackData />
+      <ListOfDestinationPointData>
+        <DestinationPointData>
+          <Kind>DestinationPoint</Kind>
+          <Id>126</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>taxi1</Title>
+          <BalyoTitle>126</BalyoTitle>
+          <PtInUnit>-15750491;1967059</PtInUnit>
+          <PortionDataId>119</PortionDataId>
+          <Percent>0.48678577041162469</Percent>
+          <DestinationType>Taxi</DestinationType>
+          <MinimalScoreForInit>99</MinimalScoreForInit>
+        </DestinationPointData>
+        <DestinationPointData>
+          <Kind>DestinationPoint</Kind>
+          <Id>127</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>stop_2</Title>
+          <BalyoTitle>127</BalyoTitle>
+          <PtInUnit>-11736455;2766454</PtInUnit>
+          <PortionDataId>113</PortionDataId>
+          <Percent>0.84236762768086337</Percent>
+          <DestinationType>Normal</DestinationType>
+          <MinimalScoreForInit>99</MinimalScoreForInit>
+        </DestinationPointData>
+        <DestinationPointData>
+          <Kind>DestinationPoint</Kind>
+          <Id>128</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>stop_1</Title>
+          <BalyoTitle>128</BalyoTitle>
+          <PtInUnit>1429375;2008263</PtInUnit>
+          <PortionDataId>104</PortionDataId>
+          <Percent>0.81525888008785519</Percent>
+          <DestinationType>Normal</DestinationType>
+          <MinimalScoreForInit>99</MinimalScoreForInit>
+        </DestinationPointData>
+        <DestinationPointData>
+          <Kind>DestinationPoint</Kind>
+          <Id>129</Id>
+          <ZOrder>0</ZOrder>
+          <IsMouseAllowedToMove>true</IsMouseAllowedToMove>
+          <Title>batt1</Title>
+          <BalyoTitle>129</BalyoTitle>
+          <PtInUnit>-15653108;2206390</PtInUnit>
+          <PortionDataId>119</PortionDataId>
+          <Percent>0.43962449119352526</Percent>
+          <DestinationType>Charger</DestinationType>
+          <MinimalScoreForInit>99</MinimalScoreForInit>
+        </DestinationPointData>
+      </ListOfDestinationPointData>
+      <ListOfGuideData />
+      <ListOfMeasurerPointData />
+      <ListOfMeasurerData />
+      <AgvModel>
+        <TurretPosition xsi:nil="true" />
+        <Cantonment>
+          <Point>
+            <X>-0.524</X>
+            <Y>-0.821</Y>
+          </Point>
+          <Point>
+            <X>1.535</X>
+            <Y>-0.821</Y>
+          </Point>
+          <Point>
+            <X>1.535</X>
+            <Y>0.821</Y>
+          </Point>
+          <Point>
+            <X>-0.524</X>
+            <Y>0.821</Y>
+          </Point>
+          <Point>
+            <X>-0.524</X>
+            <Y>-0.821</Y>
+          </Point>
+        </Cantonment>
+        <Empty>
+          <Point>
+            <X>1.534</X>
+            <Y>-0.82</Y>
+          </Point>
+          <Point>
+            <X>1.534</X>
+            <Y>0.82</Y>
+          </Point>
+          <Point>
+            <X>-0.523</X>
+            <Y>0.82</Y>
+          </Point>
+          <Point>
+            <X>-0.523</X>
+            <Y>-0.82</Y>
+          </Point>
+          <Point>
+            <X>1.534</X>
+            <Y>-0.82</Y>
+          </Point>
+        </Empty>
+        <Carry>
+          <Point>
+            <X>1.534</X>
+            <Y>-0.82</Y>
+          </Point>
+          <Point>
+            <X>1.534</X>
+            <Y>0.82</Y>
+          </Point>
+          <Point>
+            <X>-0.523</X>
+            <Y>0.82</Y>
+          </Point>
+          <Point>
+            <X>-0.523</X>
+            <Y>-0.82</Y>
+          </Point>
+          <Point>
+            <X>1.534</X>
+            <Y>-0.82</Y>
+          </Point>
+        </Carry>
+        <Shape>
+          <Point>
+            <X>-0.423</X>
+            <Y>-0.122</Y>
+          </Point>
+          <Point>
+            <X>-0.282</X>
+            <Y>-0.251</Y>
+          </Point>
+          <Point>
+            <X>-0.282</X>
+            <Y>-0.395</Y>
+          </Point>
+          <Point>
+            <X>1.234</X>
+            <Y>-0.395</Y>
+          </Point>
+          <Point>
+            <X>1.346</X>
+            <Y>-0.275</Y>
+          </Point>
+          <Point>
+            <X>1.384</X>
+            <Y>-0.08</Y>
+          </Point>
+          <Point>
+            <X>1.384</X>
+            <Y>0.08</Y>
+          </Point>
+          <Point>
+            <X>1.346</X>
+            <Y>0.275</Y>
+          </Point>
+          <Point>
+            <X>1.234</X>
+            <Y>0.395</Y>
+          </Point>
+          <Point>
+            <X>-0.282</X>
+            <Y>0.395</Y>
+          </Point>
+          <Point>
+            <X>-0.282</X>
+            <Y>0.251</Y>
+          </Point>
+          <Point>
+            <X>-0.423</X>
+            <Y>0.122</Y>
+          </Point>
+          <Point>
+            <X>-0.423</X>
+            <Y>-0.122</Y>
+          </Point>
+        </Shape>
+        <MaxTurretAngleInDegree>85</MaxTurretAngleInDegree>
+        <MinTurretAngleInDegree>-85</MinTurretAngleInDegree>
+        <MaxTurretSpeed>45</MaxTurretSpeed>
+        <MaxDistanceToWheels>1.484</MaxDistanceToWheels>
+        <MaxVelX xsi:nil="true" />
+        <MaxVelY xsi:nil="true" />
+        <MaxVelZ xsi:nil="true" />
+        <TurretPoseX>1.15</TurretPoseX>
+        <ListOfLaser />
+        <FrontDSlowCarry xsi:nil="true" />
+        <FrontDStopCarry xsi:nil="true" />
+        <RearDSlowCarry xsi:nil="true" />
+        <RearDStopCarry xsi:nil="true" />
+        <AgvName>P50_A-Frame</AgvName>
+      </AgvModel>
+    </LayerData>
+  </ListOfLayer>
+</ProjectData>
