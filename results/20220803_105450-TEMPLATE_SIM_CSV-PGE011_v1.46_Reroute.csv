@@ -1,0 +1,4 @@
+Flow;Avg. assign time;Max. assign time;Avg. mission time;Max. mission time;No. missions  done;No. pals;No. pals / h
+Inbound;00:00:01;00:00:02;00:11:40;00:43:05;78;78;18,95
+Outbound;00:02:09;02:13:01;00:13:48;00:55:06;62;62;15,06
+TOTAL;00:00:58;02:13:01;00:12:37;00:55:06;140;140;34,01
