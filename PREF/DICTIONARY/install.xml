@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gPreferences sdk="4.11.1">
+  <category name="general">
+    <pref name="saveNoLink">
+      <type>LONG</type>
+      <unit>BOOLEAN</unit>
+      <description>Save logs on "no link" errors</description>
+      <defaultValue min="0" max="1">0</defaultValue>
+    </pref>
+    <pref name="environment">
+      <type>CHAR</type>
+      <unit>none</unit>
+      <description>Definition of the environment to select</description>
+      <defaultValue>templateEnvironment</defaultValue>
+    </pref>
+  </category>
+  <category name="move">
+    <pref name="distMiniAcceptableNoMove">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>Minimum distance between the AGV and its destination to be considered at destination already.</description>
+      <defaultValue min="0.0">0.1</defaultValue>
+    </pref>
+  </category>
+  <category name="taxi">
+    <pref name="timeToWaitBeforeMoving">
+      <type>DOUBLE</type>
+      <unit>second</unit>
+      <description>Time to wait before moving at the beginning of the taxi mission).</description>
+      <defaultValue min="0.0">5</defaultValue>
+    </pref>
+    <pref name="dynamicTaxiStrategy">
+      <type>LONG</type>
+      <unit>none</unit>
+      <description>Strategy used for taxi assignment.</description>
+      <defaultValue>0</defaultValue>
+      <list>
+        <value name="0">no dynamic taxi (rob 1 will park at taxi1, rob 2 at taxi2, etc...)</value>
+        <value name="1">robots will reach the taxi with the lowest id (taxi1 will be occupied first, then taxi2, etc...)</value>
+        <value name="2">robots will reserve the closest taxi point available, when they stop working</value>
+        <value name="3">(not available yet) robot will reach the taxi position of the aisle it finished its previous mission in.</value>
+      </list>
+    </pref>
+  </category>
+  <category name="cantonnement">
+    <pref name="linkLinesFromScanList">
+      <type>LONG</type>
+      <unit>BOOLEAN</unit>
+      <description>Should traffic management consider all stocklines from a shared scanlist as a unique dead-end (prevent a truck to scan another truck as a pallet because both are working together in the same space)</description>
+      <defaultValue min="0" max="1">0</defaultValue>
+    </pref>
+  </category>
+  <category name="traffic">
+    <category name="deadlockDetection">
+      <pref name="actionOnDeadlock">
+        <type>LONG</type>
+        <unit>none</unit>
+        <description>Give a choice on the action to perform when a deadlock is detected.</description>
+        <defaultValue min="1" max="3">1</defaultValue>
+        <list>
+          <value name="1">trigger an error on all involved robots</value>
+          <value name="2">no action (same as without the event): robots stand in traffic and blocked</value>
+          <value name="3">attempt to reroute one of the locked robots</value>
+        </list>
+      </pref>
+    </category>
+  </category>
+  <category name="email">
+    <pref name="emailActivated">
+      <type>LONG</type>
+      <unit>BOOLEAN</unit>
+      <description>Activate email sending</description>
+      <defaultValue min="0" max="1">1</defaultValue>
+    </pref>
+    <category name="alerts">
+      <pref name="workingDirectory">
+        <type>CHAR</type>
+        <unit>none</unit>
+        <description>Working directory of the email feature</description>
+        <defaultValue>emailDir</defaultValue>
+      </pref>
+      <pref name="verbose">
+        <type>LONG</type>
+        <unit>none</unit>
+        <description>Verbose mode: additional logging and no file deletion</description>
+        <defaultValue>1</defaultValue>
+      </pref>
+      <pref name="recipient">
+        <type>NAME</type>
+        <unit>none</unit>
+        <description>Recipient of the email. Be careful, only email addresses less than 31 characters long can be managed this way</description>
+        <defaultValue>null</defaultValue>
+      </pref>
+      <pref name="login">
+        <type>CHAR</type>
+        <unit>none</unit>
+        <description>Login to access the mail server</description>
+        <defaultValue>balyo.monitoring.center@balyo.com</defaultValue>
+      </pref>
+      <pref name="password">
+        <type>CHAR</type>
+        <unit>none</unit>
+        <description>Password to access the mail server</description>
+        <defaultValue> </defaultValue>
+      </pref>
+      <pref name="smtpServer">
+        <type>CHAR</type>
+        <unit>none</unit>
+        <description>Adress of smtp server</description>
+        <defaultValue>smtp.gmail.com</defaultValue>
+      </pref>
+      <pref name="sslEnabled">
+        <type>LONG</type>
+        <unit>none</unit>
+        <description>Activate ssl mode</description>
+        <defaultValue>1</defaultValue>
+      </pref>
+      <pref name="sender">
+        <type>CHAR</type>
+        <unit>none</unit>
+        <description>Sender adress</description>
+        <defaultValue>balyo.monitoring.center@balyo.com</defaultValue>
+      </pref>
+      <pref name="smtpServerPort">
+        <type>CHAR</type>
+        <unit>none</unit>
+        <description>the smtp server port</description>
+        <defaultValue>25</defaultValue>
+      </pref>
+    </category>
+    <category name="stats">
+      <pref name="recipient">
+        <type>NAME</type>
+        <unit>none</unit>
+        <description>Recipient of the email. Be careful, only email addresses less than 31 characters long can be managed this way</description>
+        <defaultValue>null</defaultValue>
+      </pref>
+      <pref name="login">
+        <type>CHAR</type>
+        <unit>none</unit>
+        <description>Login to access the mail server</description>
+        <defaultValue>balyo.monitoring.center@balyo.com</defaultValue>
+      </pref>
+      <pref name="password">
+        <type>CHAR</type>
+        <unit>none</unit>
+        <description>Password to access the mail server</description>
+        <defaultValue> </defaultValue>
+      </pref>
+      <pref name="smtpServer">
+        <type>CHAR</type>
+        <unit>none</unit>
+        <description>Adress of smtp server</description>
+        <defaultValue>smtp.gmail.com</defaultValue>
+      </pref>
+      <pref name="sslEnabled">
+        <type>LONG</type>
+        <unit>none</unit>
+        <description>Activate ssl mode</description>
+        <defaultValue>1</defaultValue>
+      </pref>
+      <pref name="sender">
+        <type>CHAR</type>
+        <unit>none</unit>
+        <description>Sender adress</description>
+        <defaultValue>balyo.monitoring.center@balyo.com</defaultValue>
+      </pref>
+      <pref name="smtpServerPort">
+        <type>CHAR</type>
+        <unit>none</unit>
+        <description>the smtp server port</description>
+        <defaultValue>25</defaultValue>
+      </pref>
+    </category>
+  </category>
+  <category name="diagnosis">
+    <pref name="dailyExportHour">
+      <type>LONG</type>
+      <unit>hour</unit>
+      <description>Time of day when daily KPI export should be initiated (-1 to disable daily export)</description>
+      <defaultValue min="-1" max="23">-1</defaultValue>
+    </pref>
+    <pref name="weeklyExportDay">
+      <type>LONG</type>
+      <unit>day</unit>
+      <description>Day of the week when weekly KPI export should be initiated(0 = Sunday 6 = saturday) (-1 to disable weekly export)</description>
+      <defaultValue min="-1" max="6">-1</defaultValue>
+    </pref>
+    <pref name="monthlyExportDay">
+      <type>LONG</type>
+      <unit>day</unit>
+      <description>Day of the month when monthly KPI export should be initiated (-1 to disable monthly export)</description>
+      <defaultValue min="-1" max="31">-1</defaultValue>
+    </pref>
+  </category>
+  <category name="safetyFence">
+    <pref name="timeOutPermission">
+      <type>LONG</type>
+      <unit>seconde</unit>
+      <description>duration before considering conveyor is not free</description>
+      <defaultValue min="0">180</defaultValue>
+    </pref>
+  </category>
+  <category name="testMission">
+    <pref name="speedThreshold">
+      <type>L.DOUBLE</type>
+      <unit>metre second</unit>
+      <description>Different speed threshold for brake and security test</description>
+      <defaultValue>
+        <value>-0.75</value>
+        <value>-0.5</value>
+        <value>-0.3</value>
+        <value>0.1</value>
+        <value>0.3</value>
+        <value>0.5</value>
+        <value>1.2</value>
+        <value>1.95</value>
+      </defaultValue>
+    </pref>
+  </category>
+  <category name="conveyor">
+    <pref name="timeOut">
+      <type>LONG</type>
+      <unit>second</unit>
+      <description>Time spend in front of conveyor, waiting for it to be free before crashing an error</description>
+      <defaultValue min="0">120</defaultValue>
+    </pref>
+  </category>
+  <category name="fireAlarm">
+    <pref name="enabled">
+      <type>LONG</type>
+      <unit>BOOLEAN</unit>
+      <description>enabled Fire Alarm management or not</description>
+      <defaultValue min="0" max="1">1</defaultValue>
+    </pref>
+    <pref name="deviceID">
+      <type>L.LONG</type>
+      <unit>none</unit>
+      <description>ID of the DEVICE where is connected the Fire Alarm System</description>
+      <defaultValue>
+        <value>1</value>
+      </defaultValue>
+    </pref>
+    <pref name="inputID">
+      <type>L.LONG</type>
+      <unit>none</unit>
+      <description>ID of the INPUT where is connected the Fire Alarm System</description>
+      <defaultValue>
+        <value>1</value>
+      </defaultValue>
+    </pref>
+    <pref name="errorMode">
+      <type>LONG</type>
+      <unit>none</unit>
+      <description>If set to 1, truck errors out when fire alarm is activated. If set to 0, truck will wait until fire alarm is shut off and continue</description>
+      <defaultValue min="0" max="1">1</defaultValue>
+      <list>
+        <value name="0">Robot stays in auto but static until safe to resume</value>
+        <value name="1">Robot triggers an error (and will have to be manually restarted after fire)</value>
+      </list>
+    </pref>
+    <pref name="triggeringValue">
+      <type>LONG</type>
+      <unit>BOOLEAN</unit>
+      <description>Which state of the device input corresponds to the triggered state of the fire alarm (by opposition which is the resting state)</description>
+      <defaultValue min="0" max="1">0</defaultValue>
+      <list>
+        <value name="0">combox signal is raised (1) when everything is safe and lost (0) when a fire alarm is triggered</value>
+        <value name="1">combox signal is raised (1) when fire alarm is active and rest (0) when it's safe</value>
+      </list>
+    </pref>
+    <pref name="noStopZones">
+      <type>NAME</type>
+      <unit>none</unit>
+      <description>zones name where we need to continue driving even during fire Alarm</description>
+      <defaultValue>null</defaultValue>
+    </pref>
+    <pref name="delay">
+      <type>LONG</type>
+      <unit>second</unit>
+      <description>Delay after fireAlarm detection to trigger fireAlarm</description>
+      <defaultValue min="0">0</defaultValue>
+    </pref>
+  </category>
+  <category name="workLoadLevel">
+    <pref name="rangeOfTime">
+      <type>LONG</type>
+      <unit>minutes</unit>
+      <description> Range of time to tracking available Rob</description>
+      <defaultValue min="1">30</defaultValue>
+    </pref>
+    <pref name="numberOfChek">
+      <type>LONG</type>
+      <unit>none</unit>
+      <description> number of checking available robot per minute</description>
+      <defaultValue min="1">12</defaultValue>
+    </pref>
+  </category>
+  <category name="detection">
+    <category name="pallet3D">
+        <pref name="palletGroup">
+          <type>NAME</type>
+          <unit>none</unit>
+          <description>
+                Group the pallet can be found in (separate each group with ";" is one pallet belong to multiple groups)
+          </description>
+          <defaultValue>null</defaultValue>
+        </pref>
+      <category name="pallets">
+        <pref name="bottomDeckBoardThickness">
+          <type>L.DOUBLE</type>
+          <unit>meter</unit>
+          <description>
+                List of sizes (one per pallet design) of the bottom deckboard of the pallet (if pallet is closed). Leave it to 0. if pallet is opened
+          </description>
+          <defaultValue>null</defaultValue>
+        </pref>
+        <pref name="groupAffiliation">
+          <type>NAME</type>
+          <unit>none</unit>
+          <description>
+                arrays of 0 and 1 to indicate whether each pallet belongs to a group.
+                The pref should contains as many values as there are pallets defined in the installation
+                Each value must be made out of N characters (N being the number of groups defined in detection/pallet3D/palletGroup)
+          </description>
+          <defaultValue>null</defaultValue>
+        </pref>
+      </category>
+    </category>
+  </category>
+  <category name="display">
+    <pref name="pinSafetyTest">
+      <type>LONG</type>
+      <unit>NONE</unit>
+      <description>PIN code to start safety test</description>
+      <defaultValue>91291</defaultValue>
+    </pref>
+    <pref name="isMenuPDMAdv">
+      <type>LONG</type>
+      <unit>BOOLEAN</unit>
+      <description>Display [Picks,Drops,Move] menu in Project Menu (val=0) or Project Menu Debug (val=1)</description>
+      <defaultValue min="0" max="1">1</defaultValue>
+    </pref>
+  </category>
+  <category name="barcode">
+    <pref name="type">
+      <type>CHAR</type>
+      <unit>NONE</unit>
+      <description>Type of barcode expected</description>
+      <defaultValue>GS1-128</defaultValue>
+    </pref>
+  </category>
+  <category name="heightLimits">
+    <pref name="maxRoofHeight" safetyLevel="2">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>Maximum height of the roof above AGVs</description>
+      <defaultValue min = "0.0">50.0</defaultValue>
+    </pref>
+    <pref name="roofClearance" safetyLevel="2">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>Clearance minimum between the roof and the highest point of the AGV</description>
+      <defaultValue min = "0.0">0.15</defaultValue>
+    </pref>
+    <pref name="roofHeightZones" safetyLevel="2">
+       <type>NAME</type>
+      <unit>none</unit>
+      <description>Zones name where the forks height is limited. Zones must fit the lower roof as accurately as possible and
+                    be defined as "gabarit" instead of point.
+      </description>
+      <defaultValue>null</defaultValue>
+    </pref>
+    <pref name="roofHeights" safetyLevel="2">
+      <type>L.DOUBLE</type>
+      <unit>none</unit>
+      <description>Real height of the roof or obstacle above for each zone defined in forksHeightZones</description>
+      <defaultValue>null</defaultValue>
+    </pref>
+  </category>
+</gPreferences>

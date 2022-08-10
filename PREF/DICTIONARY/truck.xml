@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gPreferences sdk="4.11.1">
+  <category name="sensors">
+    <category name="encoderPalletBackrest">
+      <pref name="offsetPalletSensor">
+        <type>DOUBLE</type>
+        <unit>meter</unit>
+        <description>Distance from the backrest at which the pallet sensor is triggered</description>
+        <defaultValue min="0.0">0.06</defaultValue>
+      </pref>
+    </category>
+    <category name="encoderSideShifterForks">
+      <pref name="valueInverted">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>Is the sideshift encoder value inverted (forks move to the truck's left for the low stop calibration)</description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+    </category>
+  </category>
+</gPreferences>

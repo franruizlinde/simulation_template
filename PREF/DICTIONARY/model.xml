@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gPreferences sdk="4.11.1">
+  <category name="general">
+    <pref name="isMonitoringMode">
+      <type>LONG</type>
+      <unit>BOOLEAN</unit>
+      <description>Enable/disable time's monitoring</description>
+      <defaultValue min="0" max="1">0</defaultValue>
+    </pref>
+  </category>
+  <category name="traction">
+    <pref name="tSlowAfterAuto">
+      <type>LONG</type>
+      <unit>second</unit>
+      <description>duration to stay at slow speed after being turned in auto (give enough time to the operator to evacuate the rack)</description>
+      <defaultValue min="0">0</defaultValue>
+    </pref>
+    <pref name="lowSpeedAfterAuto">
+      <type>DOUBLE</type>
+      <unit>meter per second</unit>
+      <description>speed at which the truck is limited for the tSlowAfterAuto duration (after switching to auto)</description>
+      <defaultValue min="0.">0.3</defaultValue>
+    </pref>
+  </category>
+  <category name="rearLaser">
+    <category name="safety">
+      <pref name="isUnderInitialLift">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>Is the laser located under initial lift (if any doubt, should the laser be inhibited when the initial lift is down ?)
+                    If your truck is not equipped with an initial lift, please keep it to default (0)
+        </description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+      <pref name="isBlindWhenForksDown">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>
+            Can the field of vision of your rear laser be obstructed by the backrest or the forks/load in any way.
+            If set to 1, the truck will lift its forks above safety/design/minHeightRearSafetyEnabled when necessary.
+            If your truck is not equipped with a rearLaser, please keep it to default
+        </description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+    </category>
+  </category>
+  <category name="rearRightLaser">
+    <category name="safety">
+      <pref name="isUnderInitialLift">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>Is the laser located under initial lift (if any doubt, should the laser be inhibited when the initial lift is down ?)
+                    If your truck is not equipped with an initial lift, please keep it to default (0)
+        </description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+      <pref name="isBlindWhenForksDown">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>
+            Can the field of vision of your rear right laser be obstructed by the backrest or the forks/load in any way.
+            If set to 1, the truck will lift its forks above safety/design/minHeightRearSafetyEnabled when necessary.
+            If your truck is not equipped with a rearLaser, please keep it to default
+        </description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+    </category>
+  </category>
+  <category name="rearLeftLaser">
+    <category name="safety">
+      <pref name="isUnderInitialLift">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>Is the laser located under initial lift (if any doubt, should the laser be inhibited when the initial lift is down ?)
+                    If your truck is not equipped with an initial lift, please keep it to default (0)
+        </description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+      <pref name="isBlindWhenForksDown">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>
+            Can the field of vision of your rear left laser be obstructed by the backrest or the forks/load in any way.
+            If set to 1, the truck will lift its forks above safety/design/minHeightRearSafetyEnabled when necessary.
+            If your truck is not equipped with a rearLaser, please keep it to default
+        </description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+    </category>
+  </category>
+  <category name="rearMobileLaser">
+    <category name="safety">
+      <pref name="isBlindWhenForksDown">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>
+            Can the field of vision of your rear mobile laser be obstructed by the backrest or the forks/load in any way.
+            If set to 1, the truck will lift its forks above safety/design/minHeightRearSafetyEnabled when necessary.
+            If your truck is not equipped with a rearLaser, please keep it to default
+        </description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+    </category>
+  </category>
+  <category name="detection">
+    <category name="PerceptionV2">
+      <pref name="enable">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>Enable 3D perception with RoboSense and Perceval</description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+    </category>
+    <pref name="maxAngleForCorrectDetection">
+      <type>DOUBLE</type>
+      <unit>degree</unit>
+      <description>maximum angle between the truck and the rack to observe to consider the cam3D results can be exploited</description>
+      <defaultValue min="0.0">3</defaultValue>
+    </pref>
+    <category name="beam3D">
+      <pref name="scenarios">
+        <type>NAME</type>
+        <unit>none</unit>
+        <description>
+              List of scenario to apply (alteration to the detection param) in order to search the beam
+              Possible values are : sideShift+, sideShift-, forksUp, forksDown, beamFocus+, beamFocus-
+          </description>
+        <defaultValue>
+          <value>normal</value>
+        </defaultValue>
+      </pref>
+      <pref name="maxNbOfTryPerScenario">
+        <type>L.LONG</type>
+        <unit>none</unit>
+        <description>Maximum retry number before moving to the next scenario</description>
+        <defaultValue>
+          <value>3</value>
+        </defaultValue>
+      </pref>
+      <pref name="enableAdjustmentDeltaX">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>Enable correction of the X-axis with Beam3D results</description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+      <pref name="maxDeltaXAllowed" safetyLevel="2">
+        <type>DOUBLE</type>
+        <unit>Meter</unit>
+        <description>Maximum difference allowed between expected X-axis position and Beam3D results</description>
+        <defaultValue min="0.0">0.1</defaultValue>
+      </pref>
+      <pref name="enableAdjustmentDeltaZ">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>Enable correction of the height with Beam3D results</description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+      <pref name="maxDeltaZAllowed" safetyLevel="2">
+        <type>DOUBLE</type>
+        <unit>Meter</unit>
+        <description>Maximum difference allowed between expected height position and Beam3D results</description>
+        <defaultValue min="0.0">0.02</defaultValue>
+      </pref>
+    </category>
+    <category name="pallet3D">
+      <pref name="heightGroundForScanPal">
+        <type>DOUBLE</type>
+        <unit>Meter</unit>
+        <description>Camera height for detecting a pallet on the ground</description>
+        <defaultValue min="0.0">0.30</defaultValue>
+      </pref>
+      <pref name="scenarios">
+        <type>NAME</type>
+        <unit>none</unit>
+        <description>
+              List of scenario to apply (alteration to the detection param) in order to search the pallet
+              Possible values are : sideShift+, sideShift-, forksUp, forksDown, palletFocus+, palletFocus-
+          </description>
+        <defaultValue>
+          <value>normal</value>
+        </defaultValue>
+      </pref>
+      <pref name="maxNbOfTryPerScenario">
+        <type>L.LONG</type>
+        <unit>none</unit>
+        <description>Maximum retry number before moving to the next scenario</description>
+        <defaultValue>
+          <value>3</value>
+        </defaultValue>
+      </pref>
+      <pref name="enableAdjustmentDeltaX">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>Enable correction of the X-axis with Pallet3D results</description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+      <pref name="maxDeltaXAllowed" safetyLevel="2">
+        <type>DOUBLE</type>
+        <unit>Meter</unit>
+        <description>Maximum difference allowed between expected X-axis position and Pallet3D results</description>
+        <defaultValue min="0.0">0.1</defaultValue>
+      </pref>
+      <pref name="maxDeltaYAllowed">
+        <type>DOUBLE</type>
+        <unit>METER</unit>
+        <description>Max distance between the center of the forks and the center of the pallet to pick.</description>
+        <defaultValue min="0.0">0.1</defaultValue>
+      </pref>
+      <pref name="enableAdjustmentDeltaZ">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>Enable correction of the height with Pallet3D results</description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+      <pref name="maxDeltaZAllowed" safetyLevel="2">
+        <type>DOUBLE</type>
+        <unit>Meter</unit>
+        <description>Maximum difference allowed between expected height position and Pallet3D results</description>
+        <defaultValue min="0.0">0.02</defaultValue>
+      </pref>
+    </category>
+    <category name="freeSpace3D">
+      <pref name="cam3DHeightForScan">
+        <type>DOUBLE</type>
+        <unit>degree</unit>
+        <description>height of the camera (relative to the pallet height in the rack) to run the lateral freeSpace detection. (could potentially be negative)</description>
+        <defaultValue>0.3</defaultValue>
+      </pref>
+      <pref name="heightGroundForFreeSpace">
+        <type>DOUBLE</type>
+        <unit>Meter</unit>
+        <description>Camera height for detecting a freeSpace on the ground</description>
+        <defaultValue min="0.0">0.3</defaultValue>
+      </pref>
+    </category>
+  </category>
+  <category name="forksActuators">
+    <category name="slipSheetForks">
+      <pref name="maxValToBeConsideredIn" safetyLevel="2">
+        <type>DOUBLE</type>
+        <unit>Meter</unit>
+        <description>(on Reach Trucks only) maximum value of the retract sensor to consider the slipsheet to be fully retracted (threshold beyond which the flexisoft inductive sensor is deactivated)</description>
+        <defaultValue max="0.0">0.0</defaultValue>
+      </pref>
+      <pref name="intermediateStop">
+        <type>DOUBLE</type>
+        <unit>Meter</unit>
+        <description>(on Reach Trucks only) The most inner SETPOINT of the reach mast that does not trigger the PLd inductive sensor (to be used in 2 steps reach in).</description>
+        <defaultValue max="0.0">0.0</defaultValue>
+      </pref>
+    </category>
+    <category name="verticalForks">
+      <pref name="frkHeightMiniWithReachIn">
+        <type>DOUBLE</type>
+        <unit>metre</unit>
+        <description>(for reach trucks with side bumpers only) Minimum height of the forks to reach in (otherwise, the pallet might push against the rollers</description>
+        <defaultValue min="0.0">0.0</defaultValue>
+      </pref>
+      <pref name="frkHeightBaseTruckInductive">
+        <type>DOUBLE</type>
+        <unit>meter</unit>
+        <description>Forks threshold above which the base truck start acting differently (truck is slowed even in manual and initial lift is blocked)</description>
+        <defaultValue min="0.0">0.0</defaultValue>
+      </pref>
+      <category name="highSpeed">
+        <pref name="enabled">
+          <type>LONG</type>
+          <unit>none</unit>
+          <description>enable/disable automatic forks lowering when moving at high speed (necessary on some trucks to reach max speed)</description>
+          <defaultValue min="0" max="1">0</defaultValue>
+        </pref>
+        <pref name="speedThreshold">
+          <type>DOUBLE</type>
+          <unit>metre per second</unit>
+          <description>speed limitation if forks are not lowered</description>
+          <defaultValue min="0.0" max="10.0">1.6</defaultValue>
+        </pref>
+        <pref name="forksLevelAtHighSpeed">
+          <type>DOUBLE</type>
+          <unit>metre</unit>
+          <description>forks height allowing maximum speed</description>
+          <defaultValue min="0.0">0.15</defaultValue>
+        </pref>
+        <pref name="triggerMargin">
+          <type>DOUBLE</type>
+          <unit>metre per second</unit>
+          <description>offset on speed threshold to prevent the forks from moving up and down endlessly if target speed </description>
+          <defaultValue min="0.02">0.10</defaultValue>
+        </pref>
+      </category>
+    </category>
+    <category name="initialLift">
+        <pref name="allowedDuringTravel" safetyLevel="2">
+            <type>LONG</type>
+            <unit>BOOLEAN</unit>
+            <description>Defines robot behaviour during LI movement</description>
+            <list>
+                <value name="0">Truck may not move during LI movement and during 5s after the LI movement</value>
+                <value name="1">Truck may move during LI movement and speed limit ends 5s after the LI movement</value>
+                <value name="2">Truck may move during LI movement and speed limit ends 0s after the LI movement</value>
+            </list>
+            <defaultValue>0</defaultValue>
+        </pref>
+    </category>
+  </category>
+  <category name="navigation">
+    <pref name="minForSmallDistance">
+      <type>DOUBLE</type>
+      <unit>Meter</unit>
+      <description>Minimum distance needed to call the function goToSmallDistance()</description>
+      <defaultValue min="0.0">0.003</defaultValue>
+    </pref>
+  </category>
+  <category name="safety">
+    <pref name="minimumRearHardwareSafety">
+      <type>DOUBLE</type>
+      <unit>meter</unit>
+      <description>Distance between the software (static) safety field and the smallest hardware safety field.</description>
+      <defaultValue min="0.0">0.05</defaultValue>
+    </pref>
+    <pref name="dslow_tooHigh">
+      <type>DOUBLE</type>
+      <unit>meter</unit>
+      <description>Distance to a dangerous zone with lower roof where AGV starts to slow down if its forks are too high</description>
+      <defaultValue min="0.0">3.</defaultValue>
+    </pref>
+    <pref name="dstop_tooHigh">
+      <type>DOUBLE</type>
+      <unit>meter</unit>
+      <description>Distance to a dangerous zone with lower roof where AGV starts to slow down if its forks are too high</description>
+      <defaultValue min="0.0">0.2</defaultValue>
+    </pref>
+    <category name="design">
+      <pref name="isRearSafetyLaserOnTheForks">
+        <type>LONG</type>
+        <unit>none</unit>
+        <description>Is there a safety laser on the forks (ex : L12LHP 360° safety)
+        </description>
+        <defaultValue min="0" max="1">0</defaultValue>
+      </pref>
+      <pref name="LIupWhenTravellingEmpty" safetyLevel="1">
+        <type>LONG</type>
+        <unit>none</unit>
+        <description>Set at 0 to force robot to travel empty with its LI down (Only necessary for truck equipped with initial lift).
+        </description>
+        <defaultValue min="0" max="1">1</defaultValue>
+      </pref>
+      <pref name="sideBumper">
+        <type>LONG</type>
+        <unit>none</unit>
+        <description>(Only necessary for reach trucks).is the truck expected to carry loads that are bigger than the space between its 2 rollers
+        </description>
+        <defaultValue>0</defaultValue>
+      </pref>
+      <pref name="minHeightRearSafetyEnabled" safetyLevel="1">
+        <type>DOUBLE</type>
+        <unit>meter</unit>
+        <description>Minimum height for the vertical forks to make sure the forks or the bottom of the load will not be visible by the rear safety (rear / rear right / rear left laser)
+        </description>
+        <defaultValue min ="0.0">0.0</defaultValue>
+      </pref>
+      <pref name="maxHeightOkForMovement" safetyLevel="2">
+        <type>DOUBLE</type>
+        <unit>meter</unit>
+        <description>Maximum height to authorize the robot to move at full speed right after an evacuation. If forks are higher, robot will stop and wait for forks to be at a more reasonable height
+        </description>
+        <defaultValue min ="0.0">1.2</defaultValue>
+      </pref>
+      <pref name="extraEvacDist" safetyLevel="1">
+        <type>DOUBLE</type>
+        <unit>meter</unit>
+        <description>Extra distance after evac allowed to robot for moving its forks while travelling
+        </description>
+        <defaultValue min ="0.0">0.</defaultValue>
+      </pref>
+    </category>
+  </category>
+  <category name="rangefinder">
+    <pref name="distDetectionPal" safetyLevel="1">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>How far must an obstacle be placed to consider there is a palette on the forks (when using any center rangefinder as a palet sensor) </description>
+      <defaultValue min="0.0">0.1</defaultValue>
+    </pref>
+    <pref name="blindZoneLength" safetyLevel="2">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>Distance below which the the center rangefinder value is not changing (blind zone of the sensor)</description>
+      <defaultValue min="0.0">0.0</defaultValue>
+    </pref>
+    <pref name="slidingDetectionErrThreshold" safetyLevel="1">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>maximum difference between the rangefinder value and the odometry value in the checkSlidingPallet thread</description>
+      <defaultValue min="0.0">0.08</defaultValue>
+    </pref>
+  </category>
+  <category name="elevatedControl">
+    <pref name="moduleName" safetyLevel="3">
+      <type>CHAR</type>
+      <unit>none</unit>
+      <description>name of the laser use to run the scanning for the height</description>
+      <defaultValue>rearMobileLaser</defaultValue>
+      <list>
+        <value name="rearMobileLaser">rearMobileLaser</value>
+        <value name="rearLaser">rearLaser</value>
+        <value name="rearRightLaser">rearRightLaser</value>
+        <value name="rearLeftLaser">rearLeftLaser</value>
+      </list>
+    </pref>
+    <pref name="frameBuffer" safetyLevel="3">
+      <type>LONG</type>
+      <unit>none</unit>
+      <description>number of frame from the laser to start looking if obstacle are inside the spot</description>
+      <defaultValue min="1">15</defaultValue>
+    </pref>
+    <pref name="thresholdDetection" safetyLevel="3">
+      <type>LONG</type>
+      <unit>percent</unit>
+      <description>In pourcentage of framebuffer how many time there was a hit inside the polygone to consider the slot as not empty</description>
+      <defaultValue min="0" max="100">35</defaultValue>
+    </pref>
+  </category>
+  <category name="digitalOutput">
+    <pref name="outputIds">
+      <type>L.LONG</type>
+      <unit>none</unit>
+      <description>
+          GPIO physical outputs to handle
+      </description>
+      <defaultValue>null</defaultValue>
+    </pref>
+    <pref name="GPIO_ANumES">
+      <type>NAME</type>
+      <unit>none</unit>
+      <description>
+          Linked to GPIO_output/outputIds (same size).
+          Output physical location (should be either "GPIO" or "ANumES").
+      </description>
+      <defaultValue>null</defaultValue>
+    </pref>
+    <pref name="defaultStates">
+      <type>L.LONG</type>
+      <unit>none</unit>
+      <description>
+          Linked to GPIO_output/outputIds (same size).
+          Default state eof each output (should be either 0 or 1).
+      </description>
+      <defaultValue>null</defaultValue>
+    </pref>
+    <pref name="callbacks">
+      <type>NAME</type>
+      <unit>none</unit>
+      <description>
+          Linked to GPIO_output/outputIds (same size).
+          Callback called to know in which state should the output be set to (Careful, called very often)
+          proto : [0 or 1] = cbk()
+      </description>
+      <defaultValue>null</defaultValue>
+    </pref>
+  </category>
+  <category name="digitalInput">
+    <pref name="inputIds">
+      <type>L.LONG</type>
+      <unit>none</unit>
+      <description>
+          GPIO physical inputs to handle
+      </description>
+      <defaultValue>null</defaultValue>
+    </pref>
+    <pref name="GPIO_ANumES">
+      <type>NAME</type>
+      <unit>none</unit>
+      <description>
+          Linked to GPIO_inputs/inputIds (same size).
+          Inputs physical location (should be either "GPIO" or "ANumES").
+      </description>
+      <defaultValue>null</defaultValue>
+    </pref>
+    <pref name="defaultStates">
+      <type>L.LONG</type>
+      <unit>none</unit>
+      <description>
+          Linked to GPIO_inputs/inputIds (same size).
+          Default state eof each output (should be either 0 or 1).
+      </description>
+      <defaultValue>null</defaultValue>
+    </pref>
+    <pref name="setCallbacks">
+      <type>NAME</type>
+      <unit>none</unit>
+      <description>
+          Linked to GPIO_inputs/inputIds  (same size).
+          Callback called when the input is set (value becomes different from default state)  (Careful, called very often)
+          Leave an empty value in the table if you're only interesting in having an action triggered when the input is reset (to keep the same size as inputIds)
+          proto : cbk()
+      </description>
+      <defaultValue>null</defaultValue>
+    </pref>
+    <pref name="resetCallbacks">
+      <type>NAME</type>
+      <unit>none</unit>
+      <description>
+          Linked to GPIO_inputs/inputIds  (same size).
+          Callback called when the input is reset (value becomes equal to default state)  (Careful, called very often)
+          Leave an empty value in the table if you're only interesting in having an action triggered when the input is set (to keep the same size as inputIds)
+          proto : cbk()
+      </description>
+      <defaultValue>null</defaultValue>
+    </pref>
+  </category>
+  <category name="workLoadLevel">
+    <pref name="lowLoadThreshold">
+      <type>DOUBLE</type>
+      <unit>robot available</unit>
+      <description>
+            Number of (average) robot available over time to be considered as in low activity.
+            If more robot are available, then activity is considered low. (can be decimal)
+        </description>
+      <defaultValue min="0.0">2.0</defaultValue>
+    </pref>
+    <pref name="highLoadThreshold">
+      <type>DOUBLE</type>
+      <unit>robot available</unit>
+      <description>
+            Number of (average) robot available over time to be considered as in high activity.
+            If less robot are available, then activity is considered high. (can be decimal)
+        </description>
+      <defaultValue min="0.0">1.0</defaultValue>
+    </pref>
+  </category>
+  <category name="opportunityCharging">
+    <category name="lowActivity">
+      <pref name="numberOfChargers">
+        <type>LONG</type>
+        <unit>chargers</unit>
+        <description>maximum number of simultaneous battery missions allowed in this mode</description>
+        <defaultValue min="0">10</defaultValue>
+      </pref>
+      <pref name="batteryThreshold">
+        <type>LONG</type>
+        <unit>chargers</unit>
+        <description>Battery level to trigger a battery mission in this mode</description>
+        <defaultValue min="0" max="100">60</defaultValue>
+      </pref>
+    </category>
+    <category name="mediumActivity">
+      <pref name="numberOfChargers">
+        <type>LONG</type>
+        <unit>chargers</unit>
+        <description>maximum number of simultaneous battery missions allowed in this mode</description>
+        <defaultValue min="0">10</defaultValue>
+      </pref>
+      <pref name="batteryThreshold">
+        <type>LONG</type>
+        <unit>chargers</unit>
+        <description>Battery level to trigger a battery mission in this mode</description>
+        <defaultValue min="0" max="100">45</defaultValue>
+      </pref>
+    </category>
+    <category name="highActivity">
+      <pref name="numberOfChargers">
+        <type>LONG</type>
+        <unit>chargers</unit>
+        <description>maximum number of simultaneous battery missions allowed in this mode</description>
+        <defaultValue min="0">10</defaultValue>
+      </pref>
+      <pref name="batteryThreshold">
+        <type>LONG</type>
+        <unit>chargers</unit>
+        <description>Battery level to trigger a battery mission in this mode</description>
+        <defaultValue min="0" max="100">30</defaultValue>
+      </pref>
+    </category>
+  </category>
+  <category name="rackParameters">
+    <pref name="aisleWidth">
+      <type>DOUBLE</type>
+      <unit>Meter</unit>
+      <description>Aisle width for the current VNA</description>
+      <defaultValue min="0.0">0.</defaultValue>
+    </pref>
+  </category>
+  <category name="sensors">
+    <category name="ledCalibration">
+      <pref name="errorCaseCannotInit">
+        <type>LONG</type>
+        <unit>none</unit>
+        <description>Behavior to adopt when truck cannot reset its forks (if too close from / inside the rack)</description>
+        <defaultValue>1</defaultValue>
+        <list>
+          <value name="1">Robot will error out</value>
+          <value name="2">Robot will autoamtically restart its current mission (and potentially force an evac obstacle)</value>
+        </list>
+      </pref>
+    </category>
+    <category name="loadWeightSensor">
+      <pref name="maxWeightEmpty" safetyLevel="2">
+        <type>DOUBLE</type>
+        <unit>kg</unit>
+        <description>Maximum weight to be read on the sensor to consider the forks are empty. This value should be high enough to consider the weight of the forks/backrest themselves.</description>
+        <defaultValue min="0.0">200.0</defaultValue>
+      </pref>
+      <pref name="maxWeightCarry" safetyLevel="2">
+        <type>DOUBLE</type>
+        <unit>kg</unit>
+        <description>Maximum weight to be read on the sensor which is safe to carry. This value should be high enough to consider the weight of the forks/backrest on top of the wieght of the load.</description>
+        <defaultValue min="0.0">1600.0</defaultValue>
+      </pref>
+    </category>
+  </category>
+  <category name="warnings">
+    <pref name="activateBeep">
+      <type>LONG</type>
+      <unit>BOOLEAN</unit>
+      <description>Activation of AGV Beeps</description>
+      <defaultValue min="0" max="1">1</defaultValue>
+    </pref>
+    <pref name="customBeepInReverse">
+      <type>LONG</type>
+      <unit>BOOLEAN</unit>
+      <description>Activate custom beeping pattern while AGV moves in reverse (standard for US)</description>
+      <defaultValue min="0" max="1">0</defaultValue>
+    </pref>
+    <pref name="flashWhileManualEStop">
+      <type>LONG</type>
+      <unit>BOOLEAN</unit>
+      <description>Activate custom flashing pattern while AGV has a manual E-stop activated</description>
+      <defaultValue min="0" max="1">0</defaultValue>
+    </pref>
+  </category>
+  <category name="battery">
+    <pref name="missionType">
+      <type>CHAR</type>
+      <unit>none</unit>
+        <description>
+            Type of battery mission to be used.
+            Select autoCharge for mission where the truck is charged automatically.
+            Select manualCharge for missions where the truck goes to a point to be manually charged by an operator (or to have its battery changed).
+        </description>
+      <list>
+        <value name="manualCharge">manualCharge</value>
+        <value name="autoCharge">autoCharge</value>
+      </list>
+      <defaultValue>manualCharge</defaultValue>
+    </pref>
+  </category>
+  <category name="barcode">
+    <pref name="nbTry">
+      <type>LONG</type>
+      <unit>none</unit>
+      <description>Number of try reading barcode before managing error case</description>
+      <defaultValue min="0">1</defaultValue>
+    </pref>
+    <pref name="filteredSize">
+      <type>LONG</type>
+      <unit>none</unit>
+      <description>Number of character of the barcode to test</description>
+      <defaultValue min="0">1</defaultValue>
+    </pref>
+  </category>
+  <category name="forksParameters">
+    <pref name="forksMaximumHeight">
+      <type>DOUBLE</type>
+      <unit>Meter</unit>
+      <description> forks height max </description>
+      <defaultValue min="0.0">9.78</defaultValue>
+    </pref>
+    <pref name="auxiliaryMastHeightIdle">
+      <type>DOUBLE</type>
+      <unit>Meter</unit>
+      <description> auxiliary mast height idle </description>
+      <defaultValue min="0.0">0.4</defaultValue>
+    </pref>
+    <pref name="minDetectionHeight">
+      <type>DOUBLE</type>
+      <unit>Meter</unit>
+      <description> min distance for the camera above the ground </description>
+      <defaultValue min="0.0">0.4</defaultValue>
+    </pref>
+    <pref name="cmdAllowedRetractOut">
+      <type>DOUBLE</type>
+      <unit>Meter</unit>
+      <description>Safety: Vertical forks height command allowed when the retract is out</description>
+      <defaultValue>0.16</defaultValue>
+    </pref>
+    <pref name="cmdAllowedForksFront">
+      <type>DOUBLE</type>
+      <unit>Meter</unit>
+      <description>Safety: Vertical forks height command allowed when the forks are at front position</description>
+      <defaultValue>2</defaultValue>
+    </pref>
+  </category>
+  <category name="heightLimits">
+    <pref name="maxLoadHeight" safetyLevel="2">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>Highest load that can be handled by the AGVs in the project</description>
+      <defaultValue min="0.0">0.1</defaultValue>
+    </pref>
+    <pref name="maxBackrestHeight">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>No VNA trucks: Distance from top of the forks to the top of the backrest or highest module if anything is above </description>
+      <defaultValue min="0.0">0.0</defaultValue>
+    </pref>
+    <pref name="cabinHighestDist">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>VNA only: Distance from the top of the cabin or highest module if anything is above (ex.mast camera) to the cabin reference (where our feet touch when we are in the cabin) </description>
+      <defaultValue min="0.0">0.0</defaultValue>
+    </pref>
+    <pref name="firstMastHeightGround">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>VNA only: Distance from the top of first mast to the ground</description>
+      <defaultValue min="0.0">0.0</defaultValue>
+    </pref>
+    <pref name="auxMastHeightToCam">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>VNA only: Maximum auxiliary mast height so that the load or the highest point of mast don't surpass the highest point of the cabin</description>
+      <defaultValue min="0.0">0.0</defaultValue>
+    </pref>
+    <pref name="stopDistToZoneForksHigh">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>VNA only: the distance to a height limit zone to stop and wait for the forks lowering if the forks are higher than the limited height, to avoid the VNA approching the zone with forks high which then will triger an ES by HEIGHT LIMIT thread </description>
+      <defaultValue min="0.0">5.0</defaultValue>
+    </pref>
+  </category>
+  <category name="forksAnticipation">
+    <pref name="isAnticipAllowedForward">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>Is forks anticipation allowed when the robot is going forward ? 1: allowed, 0: not allowed
+        </description>
+        <defaultValue min="0" max="1">0</defaultValue>
+    </pref>
+    <pref name="isAnticipAllowedDuringTurn">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>Is forks anticipation allowed when the robot is turning after rpkBeforeLastReverse ? 1: allowed, 0: not allowed
+        </description>
+        <defaultValue min="0" max="1">1</defaultValue>
+    </pref>
+    <pref name="isAnticipAllowedAfterTurn">
+        <type>LONG</type>
+        <unit>BOOLEAN</unit>
+        <description>Is forks anticipation allowed when the robot has finished last turn and is reaching rpkApproch ? 1: allowed, 0: not allowed
+        </description>
+        <defaultValue min="0" max="1">0</defaultValue>
+    </pref>
+    <pref name="forwardAnticipationDistance">
+        <type>DOUBLE</type>
+        <unit>metre</unit>
+        <description>The distance between where the robot can start forks anticipation to rpkBeforeLastReverse if anticipation is allowed in forward
+        </description>
+        <defaultValue min="0.0">0.0</defaultValue>
+    </pref>
+    <pref name="distFromRpkIFOSToAllowAnticip">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>distance from rpk where the robot is in front of slot for further actions to where forks anticipation is allowed</description>
+      <defaultValue min="0.0">0.0</defaultValue>
+    </pref>
+    <pref name="forksHeightSpeedLimited">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description>VNA only: the vertical forks height above which the speed is limited by base truck</description>
+      <defaultValue min="0.0">4.0</defaultValue>
+    </pref>
+    <pref name="distFromReverseToAllowFrkMvt">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description> Distance before the next backward movement where AGV will start moving the forks</description>
+      <defaultValue min="0.0">3.0</defaultValue>
+    </pref>
+    <pref name="distFromReverseToPreventFrkMvt">
+      <type>DOUBLE</type>
+      <unit>metre</unit>
+      <description> Minimum distance of the next backward movement to allow the AGV to lower the forks. Will avoid mutlpiple fork movements. Only in forward movement</description>
+      <defaultValue min="0.0">6.0</defaultValue>
+    </pref>
+  </category>
+  <category name="forksRotation">
+    <pref name="generalRotationLimitedHeight" safetyLevel="2">
+      <type>DOUBLE</type>
+      <unit>Meter</unit>
+      <description>VNA only: Forks height under which forks rotation is allowed</description>
+      <defaultValue min="0.0">3</defaultValue>
+    </pref>
+    <pref name="rotationLimitedZone" safetyLevel="2">
+      <type>NAME</type>
+      <unit>none</unit>
+      <description>VNA only: Zones name where the forks rotation is allowed only when forks are lower than a given height.
+      </description>
+      <defaultValue>null</defaultValue>
+    </pref>
+    <pref name="rotationLimitedHeightByZone" safetyLevel="2">
+      <type>L.DOUBLE</type>
+      <unit>none</unit>
+      <description>VNA only: Forks height limit in zone under which rotation is allowed</description>
+      <defaultValue>null</defaultValue>
+    </pref>
+  </category>
+  <category name="CANErrorThread">
+    <pref name="stopVNA">
+      <type>L.LONG</type>
+      <unit>none</unit>
+      <description>VNA only: the list of CAN error which will be added in AddCanErrToList</description>
+      <defaultValue>null</defaultValue>
+    </pref>
+    <pref name="eStopList">
+      <type>L.LONG</type>
+      <unit>none</unit>
+      <description>List of CAN error which will be added in AddCanErrToListAU</description>
+      <defaultValue>null</defaultValue>
+    </pref>
+  </category>
+</gPreferences>

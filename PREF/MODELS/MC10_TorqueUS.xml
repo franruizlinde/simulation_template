@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Preferences sdk="4.11.1">
+  <category name="general">
+    <pref name="truckModel">YALE_MC</pref>
+    <pref name="truckType">CounterbalancedPalletStacker</pref>
+    <pref name="HAL">XBOX</pref>
+    <pref name="threadVariateur">MC</pref>
+    <pref name="backrestAbscissa">-0.349</pref>
+    <pref name="forksEndAbscissa">-1.509</pref>
+		<pref name="isMonitoringMode">0</pref>
+    <pref name="shape">
+      <value>cpx(-0.349,-0.134)</value>
+      <value>cpx(-1.509,-0.134)</value>
+      <value>cpx(-1.509,-0.234)</value>
+      <value>cpx(-0.349,-0.234)</value>
+      <value>cpx(-0.349,-0.394)</value>
+      <value>cpx(-0.190,-0.394)</value>
+      <value>cpx(-0.190,-0.476)</value>
+      <value>cpx(0.236,-0.476)</value>
+      <value>cpx(0.236,-0.394)</value>
+      <value>cpx(1.531,-0.394)</value>
+      <value>cpx(1.680,-0.131)</value>
+      <value>cpx(1.680,0.131)</value>
+      <value>cpx(1.531,0.394)</value>
+      <value>cpx(0.236,0.394)</value>
+      <value>cpx(0.236,0.476)</value>
+      <value>cpx(-0.190,0.476)</value>
+      <value>cpx(-0.190,0.394)</value>
+      <value>cpx(-0.349,0.394)</value>
+      <value>cpx(-0.349,0.234)</value>
+      <value>cpx(-1.509,0.234)</value>
+      <value>cpx(-1.509,0.134)</value>
+      <value>cpx(-0.349,0.134)</value>
+      <value>cpx(-0.349,-0.134)</value>
+    </pref>
+    <pref name="goOnAnyLift">1</pref>
+    <pref name="truckPowerOnDelay">5</pref>
+    <pref name="HWModule">
+      <value>gpio</value>
+      <value>frontLaser</value>
+      <value>rearMobileLaser</value>
+      <value>rearLeftLaser</value>
+      <value>rearRightLaser</value>
+      <value>localisation</value>
+      <value>direction</value>
+      <value>traction</value>
+      <value>curtainLaser</value>
+      <value>battery</value>
+      <value>forksVertical</value>
+      <value>rangefinderCenter</value>
+      <value>forksSideShift</value>
+      <!-- <value>barcode</value> -->
+    </pref>
+  </category>
+  <category name="gpio">
+    <pref name="interface">eno1</pref>
+    <pref name="hardware">ugpio</pref>
+    <pref name="pwmScaleMax">4095</pref>
+  </category>
+  <category name="odometrie">
+    <pref name="codeurMode">6</pref>
+    <pref name="kalpha">0.00095897</pref>
+    <pref name="modulo">65536</pref>
+    <pref name="continuousTuning">0</pref>
+    <pref name="kdsa">29956</pref>
+  </category>
+  <category name="localisation">
+    <pref name="hardware">moveBox</pref>
+    <pref name="odoFilterN">5</pref>
+    <pref name="odoFusion_Qv">0.8</pref>
+    <pref name="odoFusion_Qw">0.8</pref>
+    <pref name="caplaserAutoset">1</pref>
+    <pref name="keepRobotPose">1</pref>
+  </category>
+  <category name="cantonnement">
+    <pref name="pattern">
+      <value>cpx(-1.6,-0.58)</value>
+      <value>cpx(1.83,-0.58)</value>
+      <value>cpx(1.83, 0.58)</value>
+      <value>cpx(-1.6, 0.58)</value>
+      <value>cpx(-1.6,-0.58)</value>
+    </pref>
+  </category>
+  <category name="navigationLaser">
+    <pref name="laserRobPos">cpx(1.235,0)</pref>
+    <pref name="interface">eno1</pref>
+    <pref name="laserModel">R2000</pref>
+    <pref name="COM">192.168.1.10:2112</pref>
+    <pref name="laserReverse">0</pref>
+    <pref name="laserMesMin">1.8</pref>
+    <pref name="laserMesMax">50</pref>
+    <category name="safety">
+      <pref name="enableSafetyNavigationLaser">1</pref>
+    </category>
+  </category>
+  <category name="battery">
+    <pref name="curtisBDI">1</pref>
+    <category name="level">
+      <pref name="medium">0.45</pref>
+      <pref name="low">0.35</pref>
+      <pref name="critical">0.25</pref>
+    </category>
+  </category>
+  <category name="safety">
+    <pref name="noErrorWhileMoving">1</pref>
+    <category name="pattern">
+      <pref name="Fempty">
+        <value>cpx(-1.70,-0.58)</value>
+        <value>cpx( 1.83,-0.58)</value>
+        <value>cpx( 1.83, 0.58)</value>
+        <value>cpx(-1.70, 0.58)</value>
+        <value>cpx(-1.70,-0.58)</value>
+      </pref>
+      <pref name="Fcarry">
+        <value>cpx(-1.70,-0.58)</value>
+        <value>cpx( 1.83,-0.58)</value>
+        <value>cpx( 1.83, 0.58)</value>
+        <value>cpx(-1.70, 0.58)</value>
+        <value>cpx(-1.70,-0.58)</value>
+      </pref>
+    </category>
+    <category name="design">
+      <pref name="isRearSafetyLaserOnTheForks">0</pref>
+      <pref name="minHeightRearSafetyEnabled">0.35</pref>
+    </category>
+  </category>
+  <category name="frontLaser">
+    <pref name="interface">eno1</pref>
+    <pref name="hardware">S300</pref>
+    <pref name="COM">udp://192.168.1.32/4001</pref>
+    <pref name="a0">-90</pref>
+    <pref name="a1">90</pref>
+    <pref name="trigger_empty">3</pref>
+    <pref name="trigger_carry">3</pref>
+    <pref name="z">cpx(1.6,0)</pref>
+  </category>
+  <category name="rearMobileLaser">
+    <pref name="reverse">1</pref>
+    <pref name="zTranslation">-0.225</pref>
+    <pref name="interface">eno1</pref>
+    <pref name="hardware">S300</pref>
+    <pref name="a0">-90</pref>
+    <pref name="a1">90</pref>
+    <pref name="COM">udp://192.168.1.33/4012</pref>
+    <pref name="trigger_empty">3</pref>
+    <pref name="trigger_carry">3</pref>
+    <pref name="dinf">3.99</pref>
+    <pref name="z">cpx(-0.275,-0.08)</pref>
+    <pref name="moduleInitialisationToWait">frontLaser</pref>
+    <category name="safety">
+      <pref name="isBlindWhenForksDown">1</pref>
+    </category>
+  </category>
+  <category name="rearLeftLaser">
+    <pref name="reverse">1</pref>
+    <pref name="hardware">S300</pref>
+    <pref name="a0">-40</pref>
+    <pref name="a1">112</pref>
+    <pref name="COM">udp://192.168.1.32/4004</pref>
+    <pref name="dinf">3.99</pref>
+    <pref name="z">cpx(0.34,0.35)</pref>
+    <pref name="cap">45</pref>
+    <pref name="moduleInitialisationToWait">rearRightLaser</pref>
+    <category name="safety">
+      <pref name="activateLaserInBothDirection">1</pref>
+    </category>
+  </category>
+  <category name="rearRightLaser">
+    <pref name="reverse">1</pref>
+    <pref name="hardware">S300</pref>
+    <pref name="a0">-112</pref>
+    <pref name="a1">40</pref>
+    <pref name="COM">udp://192.168.1.32/4003</pref>
+    <pref name="dinf">3.99</pref>
+    <pref name="z">cpx(0.34,-0.35)</pref>
+    <pref name="cap">-45</pref>
+    <category name="safety">
+      <pref name="activateLaserInBothDirection">1</pref>
+    </category>
+  </category>
+  <category name="curtainLaser">
+    <pref name="interface">eno1</pref>
+    <pref name="hardware">sick</pref>
+    <pref name="COM">com/dev/ttyUSB2:250000</pref>
+    <pref name="a0">-60</pref>
+    <pref name="a1">60</pref>
+    <pref name="dstop">2.2</pref>
+    <pref name="dinf">30</pref>
+    <pref name="z">cpx(1.439,0)</pref>
+    <category name="safety">
+      <pref name="emergencyStop">0</pref>
+      <pref name="needRearmament">0</pref>
+    </category>
+  </category>
+  <category name="barcode">
+    <pref name="hardware">CLV690</pref>
+    <pref name="ip">192.168.1.20:2112</pref>
+    <pref name="interface">enp2s0</pref>
+  </category>
+  <category name="traction_speed_control">
+    <pref name="autoset_zeroValue">0</pref>
+    <pref name="enable_odocoherency">0</pref>
+    <pref name="max_output">4096</pref>
+    <category name="TractionController">
+      <pref name="power">0</pref>
+      <pref name="offset">0.0</pref>
+      <pref name="offsetNegative">0.0</pref>
+      <pref name="Tau1">0.6</pref>
+      <pref name="Tau1LowSpeed">0.6</pref>
+      <pref name="Kf">0.4</pref>
+      <pref name="KfLowSpeed">0.4</pref>
+      <pref name="TauVarAccel">0.5</pref>
+      <pref name="TauVarDecel">0.25</pref>
+      <pref name="Tau2">2</pref>
+      <pref name="Tau2LowSpeed">2</pref>
+      <pref name="KVar">2.84</pref>
+      <pref name="KVarBackward">0.8</pref>
+      <pref name="Kv">0.0</pref>
+      <pref name="modelTimeConstant">0.25</pref>
+      <pref name="sat">0.1</pref>
+      <pref name="observerOnOutput">1</pref>
+      <pref name="maxAccel">0.5</pref>
+      <pref name="maxDecel">0.5</pref>
+      <pref name="TauStart">0.3</pref>
+      <pref name="satStart">1.5</pref>
+      <pref name="noMoveMaxCorrection">0.2</pref>
+      <pref name="noReverseCommand">1</pref>
+      <pref name="maxJerk">150</pref>
+      <pref name="plugActive">1</pref>
+      <pref name="enable_odocoherency_v2">1</pref>
+      <category name="feedforward">
+        <pref name="setpoint2control">
+          <value>cpx(-3.00,-1.00)</value>
+          <value>cpx(-0.85,-0.63)</value>
+          <value>cpx(0.00,0.00)</value>
+          <value>cpx(0.95,0.70)</value>
+          <value>cpx(2.00,0.875)</value>
+          <value>cpx(3.00,1.00)</value>
+        </pref>
+      </category>
+      <category name="forksLimitations">
+          <pref name="heightThreshold">0.505</pref>
+          <pref name="KpThreshold1">0.43</pref>
+      </category>
+    </category>
+  </category>
+  <category name="turret_position_control">
+    <pref name="enable_odocoherency">0</pref>
+    <pref name="autoset_zeroValue">1</pref>
+    <pref name="max_output">-900</pref>
+    <pref name="enable_coherency">1</pref>
+    <category name="TorqueVariatorController">
+      <pref name="Tau1">0.3</pref>
+      <pref name="Kf">0.9</pref>
+      <pref name="Kf2">0.9</pref>
+      <pref name="Tau2">0.1</pref>
+      <pref name="sat">4000</pref>
+      <pref name="Kv">0.5</pref>
+      <pref name="Tau3">0.15</pref>
+      <pref name="Tau4">0.075</pref>
+      <pref name="actuatorInertia">0.00025</pref>
+      <pref name="modelTimeConstant">0.15</pref>
+      <pref name="maxSpeed">60.0</pref>
+      <pref name="maxAccel">360.0</pref>
+      <pref name="speedCompensation">0.002</pref>
+      <pref name="ditherFrequency">15</pref>
+      <pref name="ditherAmplitude">0.05</pref>
+      <pref name="offsetType">4</pref>
+    </category>
+    <category name="AngleCoherency">
+      <pref name="headingTolerance">3</pref>
+      <pref name="angleTolerance">3</pref>
+    </category>
+  </category>
+  <category name="trajectoryDriver">
+    <pref name="isTugger">0</pref>
+    <pref name="isTorqueSteeringMC">1</pref>
+    <pref name="isCalibrationMode">0</pref>
+    <pref name="enable_newControls">1</pref>
+    <pref name="guessDistMin">0.2</pref>
+    <pref name="guessDistKspd1">0.75</pref>
+    <pref name="turretAngularDelay">0.05</pref>
+    <pref name="enable_errAlpha">0</pref>
+    <pref name="stopOnCanErr">1</pref>
+    <category name="preciseStop">
+      <pref name="TauPos">0.7</pref>
+      <pref name="distanceBrakeTolerance">0.02</pref>
+      <pref name="stopMinError">0.05</pref>
+      <pref name="isSlowDown">0.5</pref>
+      <pref name="speedControlResponseTime">0.45</pref>
+      <pref name="brakeActivationDelay">0.05</pref>
+      <pref name="powerSat">1.0</pref>
+    </category>
+    <category name="speedLimit">
+      <pref name="maxForwardSpeed">1.8</pref>
+      <pref name="maxBackwardSpeed">0.8</pref>
+      <pref name="maxLateralSpeed">0.45</pref>
+      <pref name="minSpeed">0.01</pref>
+      <pref name="accelerationCarry">0.45</pref>
+      <pref name="decelerationCarry">0.45</pref>
+      <pref name="accelerationEmpty">0.45</pref>
+      <pref name="decelerationEmpty">0.45</pref>
+      <pref name="decelerationAnticipationTime">1</pref>
+      <pref name="lateralAcceleration">1</pref>
+      <pref name="vmaxEvac">0.25</pref>
+      <category name="forksSpeedLimitations">
+        <pref name="limitations">
+          <value>cpx(0.347,0.25)</value>
+          <value>cpx(0.40,1.9)</value>
+          <value>cpx(100,0.25)</value>
+        </pref>
+      </category>
+    </category>
+    <category name="robotKinematicsModel">
+      <pref name="turretXPositionForksUp">1.3</pref>
+      <pref name="turretXPositionForksDown">1.3</pref>
+      <pref name="turretYPosition">0</pref>
+      <pref name="maxTurretAngle">88</pref>
+      <pref name="minTurretAngle">-88</pref>
+      <pref name="maxTurretAngularVelocity">55</pref>
+      <pref name="maxDistanceToWheels">1.680</pref>
+      <pref name="wheelOffset_y">-0.02355</pref>
+    </category>
+  </category>
+  <category name="sensors">
+    <category name="encoderVerticalForks">
+      <pref name="enable">1</pref>
+      <pref name="sensorName">EAcodfil</pref>
+    </category>
+    <category name="encoderSideShifterForks">
+      <pref name="enable">1</pref>
+      <pref name="sensorName">shiftPosition</pref>
+    </category>
+    <category name="encoderPalletRangefinder">
+      <pref name="enable">1</pref>
+      <pref name="sensorName">EAtele1</pref>
+    </category>
+    <category name="sensorIP">
+      <pref name="sensorNames">
+        <value>anumESNextGen</value>
+        <value>anumESForksNextGen</value>
+        <value>safetyNextGen</value>
+        <value>safetyIONextGen</value>
+      </pref>
+      <pref name="types">
+        <value>anumES</value>
+        <value>anumESForks</value>
+        <value>safety</value>
+        <value>IO</value>
+      </pref>
+      <pref name="connectionTypes">
+        <value>serial</value>
+        <value>IPBalyo</value>
+        <value>IPBalyo</value>
+        <value>IPBalyo</value>
+      </pref>
+      <pref name="addresses">
+        <value>/dev/ttyUSB0</value>
+        <value>192.168.1.33</value>
+        <value>127.0.0.1</value>
+        <value>127.0.0.1</value>
+      </pref>
+      <pref name="parameters">
+        <value>921600</value>
+        <value>4011</value>
+        <value>5000</value>
+        <value>5500</value>
+      </pref>
+      <pref name="timeouts">
+        <value>0.5</value>
+        <value>0.5</value>
+        <value>0.1</value>
+        <value>0.1</value>
+      </pref>
+    </category>
+  </category>
+  <category name="forksActuators">
+    <category name="verticalForks">
+      <pref name="enable">1</pref>
+      <pref name="outputName">FRKupdw</pref>
+      <pref name="sensorName">EAcodfil</pref>
+      <pref name="heightLimit">3.925</pref>
+    </category>
+    <category name="sideShifterForks">
+      <pref name="enable">1</pref>
+      <pref name="outputName">FRKshift</pref>
+      <pref name="sensorName">shiftPosition</pref>
+    </category>
+  </category>
+  <category name="rangefinder">
+    <pref name="distDetectionPal">0.1</pref>
+    <pref name="blindZoneLength">0.08</pref>
+    <pref name="slidingDetectionErrThreshold">0.09</pref>
+  </category>
+  <category name="warnings">
+    <pref name="customBeepInReverse">1</pref>
+    <pref name="flashWhileManualEStop">1</pref>
+    <pref name="blueSpot">optOutS2</pref>
+    <pref name="indicatorLeft">optOutS5</pref>
+    <pref name="indicatorRight">optOutS4</pref>
+    <pref name="beeper">optOutS1</pref>
+    <pref name="horn">optOutS3</pref>
+  </category>
+  <category name="detection">
+    <pref name="module">
+     <value>frontLaser</value>
+     <value>rearMobileLaser</value>
+     <value>rearLeftLaser</value>
+     <value>rearRightLaser</value>
+    </pref>
+  </category>
+  <category name="moveBox">
+    <pref name="ethernetInterfaceName">eno1</pref>
+    <pref name="wifiInterfaceName">wlp1s0</pref>
+  </category>
+  <category name="forksControllers">
+    <category name="verticalForks">
+      <category name="genericForksController">
+        <category name="parameters">
+          <pref name="toleranceUp">0.01</pref>
+          <pref name="toleranceDown">0.01</pref>
+          <pref name="stopMovingUp">0.01</pref>
+          <pref name="stopMovingDown">0.005</pref>
+          <pref name="noMoveVelocity">0.003</pref>
+          <pref name="maximalOutput">4095</pref>
+          <pref name="maxDistBeforeActuatorBlocked">0.2</pref>
+          <pref name="toleranceDistanceBeforeTooFar">0.2</pref>
+          <pref name="coherencyMinspeed">0.01</pref>
+          <pref name="toleranceZero">0.025</pref>
+          <pref name="toleranceSpeedCoef">0.3</pref>
+        </category>
+        <category name="upperForks">
+          <pref name="Tau1">0.3</pref>
+          <pref name="Tau2">0.5</pref>
+          <pref name="KVar">0.3</pref>
+          <pref name="Kv">0.1</pref>
+          <pref name="modelTimeConstant">0.75</pref>
+          <pref name="sat">0.05</pref>
+          <pref name="maxVelocity">0.25</pref>
+          <pref name="maxAccel">0.3</pref>
+          <pref name="offset">0</pref>
+          <pref name="minSpeed">0.05</pref>
+          <pref name="power">0.69</pref>
+        </category>
+        <category name="lowerForks">
+          <pref name="Tau1">0.5</pref>
+          <pref name="Tau2">0.5</pref>
+          <pref name="KVar">0.39</pref>
+          <pref name="Kv">0.1</pref>
+          <pref name="modelTimeConstant">0.6</pref>
+          <pref name="sat">0.05</pref>
+          <pref name="maxVelocity">0.25</pref>
+          <pref name="satComMax">1</pref>
+          <pref name="maxAccel">0.3</pref>
+          <pref name="offset">0.2</pref>
+          <pref name="power">2</pref>
+        </category>
+      </category>
+    </category>
+    <category name="sideShifterForks">
+      <category name="genericSideshiftController">
+        <pref name="Tau1">0.6</pref>
+        <pref name="Tau2">5</pref>
+        <pref name="KVar">0.8</pref>
+        <pref name="Kv">0.0</pref>
+        <pref name="modelTimeConstant">0.6</pref>
+        <pref name="sat">0.0</pref>
+        <pref name="maxVelocity">0.04</pref>
+        <pref name="maxAccel">0.4</pref>
+        <pref name="offset">0.025</pref>
+        <pref name="satComMax">0.1</pref>
+        <category name="parameters">
+          <pref name="tolerance">0.008</pref>
+          <pref name="stopMoving">0.008</pref>
+          <pref name="noMoveVelocity">0.01</pref>
+          <pref name="maximalOutput">4095</pref>
+        </category>
+      </category>
+      <category name="controllerFast">
+        <pref name="timeout">20.0</pref>
+        <pref name="startActuatorBlockedInhibition">1.0</pref>
+        <pref name="blockingTimeout">1.0</pref>
+        <pref name="blockingThreshold">4000</pref>
+        <pref name="tolerance">0.005</pref>
+        <pref name="immobilityVelocityThreshold">0.01</pref>
+        <pref name="endMovementTimeout">0.6</pref>
+        <pref name="maximalOutput">4095</pref>
+      </category>
+    </category>
+  </category>
+  <category name="navigation">
+    <pref name="pathFlag">162</pref>
+  </category>
+</Preferences>
