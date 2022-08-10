@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preferences sdk="4.11.1">
+  <category name="general">
+    <pref name="trucksSerial">
+      <!-- Circuit test -->
+      <!-- <value>Truck_L16AC_LL_B_TPPL</value>
+      <value>Truck_RGen2_4PZS_SAST_LTO</value>
+      <value>Truck_K-gen2_PROTO_Ld</value> -->
+      <!-- FOR THE Template PROJECT -->
+      <!-- <value>Truck_L12HP_VarianteA_Ld_1</value>
+      <value>Truck_L12HP_VarianteA_Ld_2</value> -->
+
+      <!--TRUCKS FOR PGE011-->
+<!--       <value>Truck_R16HD_Gen2_11455_N_Ld_1</value>
+      <value>Truck_R16HD_Gen2_11455_N_Ld_2</value>
+      <value>Truck_R16HD_Gen2_11455_N_Ld_3</value>
+      <value>Truck_R16HD_Gen2_11455_N_Ld_4</value>
+      <value>Truck_R16HD_Gen2_11455_N_Ld_5</value>
+      <value>Truck_R16HD_Gen2_11455_N_Ld_6</value>
+      <value>Truck_R16HD_Gen2_11455_N_Ld_7</value>
+      <value>Truck_R16HD_Gen2_11455_N_Ld_8</value>
+      <value>Truck_R16HD_Gen2_11455_N_Ld_9</value>
+      <value>Truck_R16HD_Gen2_11455_N_Ld_10</value> -->
+
+      <!--TRUCKS FOR BER010-->
+<!--       <value>FWG21-3073.H-154</value>
+      <value>FWG21-3073.H-155</value>
+      <value>FWG21-3073.H-156</value>
+      <value>FWR19-3074.B-034</value>
+      <value>FWR19-3074.B-035</value>
+      <value>FWG21-0071.I-248</value> -->
+
+      <!--TRUCKS FOR KNF_V13-->
+<!--       <value>Truck_L12AC_HL_Ld</value>
+      <value>Truck_L12AC_HL_Ld_1</value>
+      <value>Truck_L12AC_HL_Ld_2</value>
+      <value>Truck_L12AC_HL_Ld_3</value>
+      <value>Truck_L12AC_HL_Ld_4</value>
+      <value>Truck_K-gen2_PROTO_Ld</value>
+      <value>Truck_K-gen2_PROTO_Ld_1</value>
+      <value>Truck_K-gen2_PROTO_Ld_2</value>
+      <value>Truck_K-gen2_PROTO_Ld_3</value> -->
+
+      <!-- TRUCKS FOR EBM -->
+      <value>Truck_L12HP_VarianteB_LTO_1</value>
+      <value>Truck_L12HP_VarianteB_LTO_2</value>
+      <value>Truck_L12HP_VarianteB_LTO_3</value>
+      <value>Truck_L12HP_VarianteB_LTO_4</value>
+      <value>Truck_L12HP_VarianteB_LTO_5</value>
+      <value>Truck_L12HP_VarianteB_LTO_6</value>
+      <value>Truck_L12HP_VarianteB_LTO_7</value>
+      <value>Truck_L12HP_VarianteB_LTO_8</value>
+      <value>Truck_L12HP_VarianteB_LTO_9</value>
+      <value>Truck_L12HP_VarianteB_LTO_10</value>
+      <value>Truck_L12HP_VarianteB_LTO_11</value>
+      <!-- 
+      // Only 11 agvs are used
+      <value>Truck_L12HP_VarianteB_LTO_12</value>
+      <value>Truck_L12HP_VarianteB_LTO_13</value>
+      <value>Truck_L12HP_VarianteB_LTO_14</value>
+      <value>Truck_L12HP_VarianteB_LTO_15</value>
+      <value>Truck_L12HP_VarianteB_LTO_016</value>
+      <value>Truck_L12HP_VarianteB_LTO_17</value>
+      <value>Truck_L12HP_VarianteB_LTO_18</value>
+      <value>Truck_L12HP_VarianteB_LTO_19</value>
+      <value>Truck_L12HP_VarianteB_LTO_20</value>
+      <value>Truck_L12HP_VarianteB_LTO_21</value>
+      <value>Truck_L12HP_VarianteB_LTO_22</value> -->
+
+    </pref>
+    <pref name="projectName">TEMPLATE_SIM_CSV</pref>
+    <pref name="trucksName">
+      <value>Lmatic_1</value>
+      <value>Lmatic_2</value>
+      <value>Lmatic_3</value>
+      <value>Lmatic_4</value>
+      <value>Lmatic_5</value>
+      <value>Lmatic_6</value>
+      <value>Lmatic_7</value>
+      <value>Lmatic_8</value>
+      <value>Lmatic_9</value>
+      <value>Lmatic_10</value>
+      <value>Lmatic_11</value>
+      <value>Lmatic_12</value>
+      <value>Lmatic_13</value>
+      <value>Lmatic_14</value>
+      <value>Lmatic_15</value>
+      <value>Lmatic_16</value>
+      <value>Lmatic_17</value>
+      <value>Lmatic_18</value>
+      <value>Lmatic_19</value>
+      <value>Lmatic_20</value>
+      <value>Lmatic_21</value>
+      <value>Lmatic_22</value>
+    </pref>
+    <pref name="language">EN</pref>
+    <pref name="keyboard">us</pref>
+    <pref name="logLevel">0</pref>
+
+    <!-- CIRCUIT NAME -->
+    <!-- <pref name="circuitFileName">BER010_V19.xml</pref>     -->
+    <pref name="circuitFileName">EBM_extension_neo.xml</pref>    
+    <!-- <pref name="circuitFileName">KNF_v13.xml</pref> -->
+    <!-- <pref name="circuitFileName">PGE011_v1.46_Reroute.xml</pref> -->
+    <!-- <pref name="circuitFileName">L12HP_VarianteA_forSimu.xml</pref> -->
+
+
+    <pref name="environment">templateEnvironment</pref>
+    <pref name="saveNoLink">0</pref>
+  </category>
+  <category name="traction">
+    <pref name="tdemMin">2</pref>
+    <pref name="tdemSecu">2</pref>
+    <pref name="tdemTaxi">2</pref>
+  </category>
+  <category name="localisation">
+    <pref name="mapFilePath">map_Moissy.geo</pref>
+    <pref name="initMinimumNoteDefault">100</pref>
+    <pref name="relocNote">200</pref>
+  </category>
+  <category name="navigation">
+    <pref name="eproj">0.3</pref>
+    <pref name="cantonBrakeTolerance">0.2</pref>
+  </category>
+  <category name="detection">
+    <pref name="activeZoneScan">1</pref>
+    <pref name="activePalScan">1</pref>
+    <category name="palDetect">
+      <pref name="roundValue">0.02</pref>
+      <pref name="houghThreshold">4</pref>
+      <pref name="thresholdPoint">5</pref>
+      <pref name="nbTrameAccum">17</pref>
+      <pref name="TMO">20</pref>
+      <pref name="mergeDist">0.65</pref>
+    </category>
+    <category name="zoneDetect">
+      <pref name="TMOMapData">40</pref>
+      <pref name="toleranceDistPalToPoint">0.2</pref>
+      <pref name="widthPalletPercent">0.85</pref>
+    </category>
+    <category name="rackDetect">
+      <pref name="widthPalletPercent">0.85</pref>
+    </category>
+    <category name="pallet3D">
+      <category name="pallets">
+        <pref name="names">
+          <value>EUR1_800x1200_Face</value>
+        </pref>
+        <pref name="centralGapWidth">
+          <value>0.2275</value>
+        </pref>
+        <pref name="centralGapWidthTolMin">
+          <value>-0.03</value>
+        </pref>
+        <pref name="centralGapWidthTolMax">
+          <value>0.03</value>
+        </pref>
+        <pref name="centralGapHeight">
+          <value>0.1</value>
+        </pref>
+        <pref name="centralGapHeightTol">
+          <value>0.03</value>
+        </pref>
+        <pref name="centralBlockWidth">
+          <value>0.145</value>
+        </pref>
+        <pref name="centralBlockWidthTolMin">
+          <value>-0.03</value>
+        </pref>
+        <pref name="centralBlockWidthTolMax">
+          <value>0.03</value>
+        </pref>
+        <pref name="externalBlockWidth">
+          <value>0.1</value>
+        </pref>
+        <pref name="externalBlockWidthTolMin">
+          <value>-0.03</value>
+        </pref>
+        <pref name="externalBlockWidthTolMax">
+          <value>0.03</value>
+        </pref>
+        <pref name="palletWidth">
+          <value>0.8</value>
+        </pref>
+        <pref name="palletWidthToleranceMin">
+          <value>-0.05</value>
+        </pref>
+        <pref name="palletWidthToleranceMax">
+          <value>0.05</value>
+        </pref>
+        <pref name="bottomDeckBoardThickness">
+          <value>0</value>
+        </pref>
+        <pref name="groupAffiliation">
+          <value>00</value>
+        </pref>
+      </category>
+      <pref name="palletGroup">
+        <value>EURO</value>
+        <value>STANDARD</value>
+      </pref>
+    </category>
+  </category>
+  <category name="cantonnement">
+    <pref name="cantonDsample">0.2</pref>
+    <pref name="cantonDav">8</pref>
+    <pref name="autoFreeCanton">1</pref>
+  </category>
+  <category name="diagnosis">
+    <pref name="activeDiagnosis">1</pref>
+    <pref name="activeSync">0</pref>
+    <pref name="authentication">1</pref>
+    <category name="localDB">
+      <pref name="address">127.0.0.1</pref>
+      <pref name="port">27017</pref>
+    </category>
+    <category name="remoteDB">
+      <pref name="address">54.228.8.237</pref>
+      <pref name="port">51841</pref>
+      <pref name="connectionLogin">diagtester</pref>
+      <pref name="connectionPassword">wmqtpiqirx</pref>
+    </category>
+  </category>
+  <category name="communication">
+    <pref name="mode">wifi</pref>
+    <category name="radio">
+      <pref name="EthSerCans_IP">
+        <value>eth://10.25.30.140</value>
+      </pref>
+      <pref name="CheckStatusEthSerCans_IP">1</pref>
+    </category>
+    <category name="TCP">
+      <pref name="IP_trucks">
+        <value>IP ADDRESS</value>
+      </pref>
+      <pref name="IP_supervisor">SUPERVISOR IP ADDRESS</pref>
+    </category>
+    <category name="wifi">
+      <pref name="encryption">WPA-PSK</pref>
+      <pref name="SSID">BALYO_AGV</pref>
+      <pref name="mask">255.255.0.0</pref>
+      <pref name="gateway">10.25.30.1</pref>
+      <pref name="key">b@ly0-2k16</pref>
+      <category name="roaming">
+        <pref name="threshold">-65</pref>
+        <pref name="lowScanDelay">2</pref>
+      </category>
+    </category>
+  </category>
+  <category name="email">
+    <pref name="emailActivated">1</pref>
+  </category>
+  <category name="fireAlarm">
+    <pref name="enabled">0</pref>
+    <pref name="deviceID">
+      <value>0</value>
+      <value>1</value>
+      <value>2</value>
+    </pref>
+    <pref name="inputID">
+      <value>2</value>
+      <value>2</value>
+      <value>2</value>
+    </pref>
+    <pref name="errorMode">0</pref>
+    <!-- <pref name="passiveManagement">1</pref> -->
+    <pref name="noStopZones">
+      <value>alarmZone1</value>
+    </pref>
+    <!-- <pref name="filter">5</pref> -->
+    <pref name="delay">1</pref>
+  </category>
+  <category name="testMission">
+    <pref name="speedThreshold">
+      <value>-0.4</value>
+      <value>-0.1</value>
+      <value>0.1</value>
+      <value>0.7</value>
+      <value>1.6</value>
+      <value>2.0</value>
+    </pref>
+  </category>
+</Preferences>
